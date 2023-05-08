@@ -1,0 +1,17 @@
+<?php return array (
+  'plugins.themes.pragma.name' => 'Tema Pragma',
+  'plugins.themes.pragma.description' => 'Tema para OJS 3',
+  'plugins.themes.pragma.more-info' => 'Más información',
+  'plugins.themes.pragma.issues.recent' => 'Números recientes',
+  'plugins.themes.pragma.issue.published' => 'Publicado',
+  'plugins.themes.pragma.issue.description' => 'Descripción del número',
+  'plugins.themes.pragma.registration.consent' => 'Autorización',
+  'plugins.themes.pragma.mainMenu' => 'Menú principal',
+  'plugins.themes.pragma.language.toggle' => 'Cambia el idioma. El idioma actual es:',
+  'plugins.themes.pragma.adminMenu' => 'Menú Administración',
+  'plugins.themes.pragma.issue.fullIssueLink' => 'Ver el número completo',
+  'plugins.themes.pragma.article.biography' => 'Biografía',
+  'plugins.themes.pragma.article.figure' => 'Imagen de portada',
+  'plugins.themes.pragma.authors.browse' => 'Navegar por autores/as',
+  'plugins.themes.pragma.author.details' => 'Información del Autor/a',
+);

@@ -1,0 +1,16 @@
+<?php return array (
+  'plugins.importexport.quickSubmit.displayName' => 'QuickSubmit Plugin',
+  'plugins.importexport.quickSubmit.description' => 'One-step submission plugin',
+  'plugins.importexport.quickSubmit.descriptionLong' => 'This plugin allows you to quickly add complete submissions to the production stage.',
+  'plugins.importexport.quickSubmit.success' => 'Monograph Added',
+  'plugins.importexport.quickSubmit.successDescription' => 'Monograph creation was successful.',
+  'plugins.importexport.quickSubmit.successReturn' => 'Return to QuickSubmit plugin.',
+  'plugins.importexport.quickSubmit.cancel' => 'Submission cancelled',
+  'plugins.importexport.quickSubmit.cancelDescription' => 'Submission was cancelled.',
+  'plugins.importexport.quickSubmit.published' => 'Published',
+  'plugins.importexport.quickSubmit.unpublished' => 'Unpublished',
+  'plugins.importexport.quickSubmit.goToSubmission' => 'Go to Submission',
+  'plugins.importexport.quickSubmit.selectIssue' => 'An issue must be selected',
+  'editor.article.removeCoverImageFileNotFound' => 'The cover image you requested to delete could not be found. It may have already been deleted. Try reloading the page.',
+  'editor.issues.coverPage' => 'Cover Image',
+);

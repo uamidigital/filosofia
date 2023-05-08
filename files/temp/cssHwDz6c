@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2? family= Josefin+Sans:wght@100 & family= Lobster & display=swap');
+
+
+
+.pkp_head_wrapper {
+
+    /* aqui van las propiedades del codigo del encabezado*/
+
+}
+
+#map {
+    height: 195px;
+    /*ancho del mapa*/
+    width: 357px;
+}
+
+/*PIE DE PAGINA*/
+
+.pie-pagina {
+    width: 100%;
+    background-color: #181A1A;
+}
+
+/*CREAR 3 COLUMNAS*/
+.pie-pagina .grupo-1 {
+    width: 100%;
+    max-width: 1175px;
+    /*tamaño en el que se expande el bloque de las 3 columnas*/
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 20px 0px;
+    /*margen las letras y el final al ancho del pie de pagina*/
+
+}
+
+/*CAJA DE LA IMAGEN*/
+.pie-pagina .grupo-1 .box figure {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Verdana;
+    /*TIPO DE LETRA*/
+}
+
+/*TAMAÑO DE IMAGEN*/
+.pie-pagina .grupo-1 .box figure img {
+    width: 250px;
+
+}
+
+/*TITULOS*/
+.pie-pagina .grupo-1 .box h2 {
+    font-family: Verdana;
+    /*TIPO DE LETRA*/
+    font-weight: 100;
+    /*ANCHO DE LA LETRA*/
+    color: #fff;
+    margin-bottom: 0;
+    margin-top: -5px;
+    font-size: 25px;
+    line-height: 36px;
+    /*para que no se amontonen las letras cuando dan el salto de pagina por responsive*/
+
+}
+
+.pie-pagina .grupo-1 .box img {
+    /*tamaño de la imagen de bindani*/
+    width: 120px;
+    margin: 5px;
+}
+
+
+/*PARRAGOS DE TEXTO*/
+.pie-pagina .grupo-1 .box h3 {
+    color: #57A519;
+    margin-bottom: 10px;
+    font-size: 18px;
+    margin-top: 35px;
+    /*margen entre las letras verdes de la segunda caja*/
+    text-align: justify;
+    font-weight: 250px;
+    /*ancho de las letras veerdes (revistas signos, bindani, uam iztapalapa)*/
+
+}
+
+/*PARRAGOS DE TEXTO*/
+.pie-pagina .grupo-1 .box p {
+    color: #efefef;
+    margin-bottom: 20px;
+    /*margen entre el la dirección y el mapa*/
+}
+
+/*REDES SOCIALES*/
+.pie-pagina .grupo-1 .red-social a {
+    display: inline-block;
+    text-decoration: none;
+    width: 60px;
+    /*ancho de circulo*/
+    height: 60px;
+    /*largo de circulo*/
+    border-radius: 50px;
+    /*hace que las cajas de las redes sociales sean circulaes*/
+    line-height: 62px;
+    color: black;
+    /*color de los iconos*/
+    margin-right: 16px;
+    /*margen entre iconos*/
+    background-color: #57A519;
+    /*color de fondo de los iconos*/
+    text-align: center;
+    transition: all 300ms ease;
+    font-size: 40px;
+    /*tamaño de los iconos*/
+    margin-top: 20px;
+
+}
+
+/*HACER AZUL LOS ICONOS CUANDO SE PASA EL CURSOR*/
+.pie-pagina .grupo-1 .red-social a:hover {
+    color: white;
+}
+
+/*IMAGEN DE LOGOTIPO VERDE CINTA UAM*/
+.pie-pagina .grupo-2 {
+    background-color: white;
+    padding: 0px;
+    text-align: center;
+    color: #fff;
+    width: 100%;
+    
+}
+
+
+.gp2{ /*clase para que la imagen de la cinta verde este en toda la oantalla*/
+    width: 100%;
+}
+
+
+/*IMAGEN DE LOGOTIPO DE UAM IZTAPALAPA*/
+.pie-pagina .grupo-3 {
+    background-color: #fff;
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff;
+    width: 100px;
+    /*height: 4em;*/
+}
+
+
+.grupo-3 img { /*tamaño de la imagen logo iztapalapa de hasta abajo*/
+    /*tamaño de la imagen de bindani*/
+    width: 500px;
+    display: block;
+    margin: auto;
+    margin-top: 30px;
+}
+
+
+.pie-pagina .grupo-2 small {
+    font-size: 15px;
+}
+
+.tamañogoogle{ /*clase para que la imagen google quede diferente al tamaño de bindani*/
+   width: 0px;
+   height: 30px;
+}
+
+/*PANTALLA*/
+@media screen and (max-width:800px) {
+    .pie-pagina .grupo-1 {
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+        padding: 35px 0px;
+
+    }
+}

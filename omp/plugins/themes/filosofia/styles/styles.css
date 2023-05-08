@@ -1,0 +1,723 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@600&family=Manrope:wght@600&family=Oxygen&family=Roboto+Mono&display=swap');
+
+body{
+background-color:whitesmoke!important;
+}
+
+#map{
+    height: 180px;
+}
+
+.foxnav {
+    max-width: 100%;
+    padding: 0 2em;
+    background-color: #FFF;
+    border-radius: 0.3rem;
+    box-shadow: 0 2px 2px #CCC;
+    line-height: 4em;
+    font-weight: bold;
+    white-space: nowrap;
+    overflow: auto;
+  }
+  
+  .foxs {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: inline-grid;
+    grid-auto-flow: column;
+    grid-gap: 1em;
+  }
+  .foxnav-items > *:nth-child(1) {
+    grid-column: 1 / 2;
+  }
+  .foxnav-items > *:nth-child(2) {
+    grid-column: 2 / 3;
+  }
+  .foxnav-items > *:nth-child(3) {
+    grid-column: 3 / 4;
+  }
+  .foxnav-items > *:nth-child(4) {
+    grid-column: 4 / 5;
+  }
+  .foxnav-items > *:nth-child(5) {
+    grid-column: 5 / 6;
+  }
+  .foxnav-items > *:nth-child(6) {
+    grid-column: 6 / 7;
+  }
+  
+  .foxnav-item {
+    padding: 0 0.75em;
+    display: inline;
+    grid-row: 1/1;
+    font-size: 20px;
+    font-family: 'Cabin', sans-serif;
+  }
+  .foxnav-item.active .item-link {
+    color: #2DA;
+  }
+  
+  .item-link {
+    color: #456;
+    text-decoration: none;
+    transition: color 256ms;
+  }
+  .item-link:hover {
+    color: #297;
+    text-decoration: undelrine;
+  }
+  
+  .separator {
+    width: 1px;
+    height: 60%;
+    margin: 10% 0;
+    background-color: #CCC;
+    align-self: center;
+  }
+  
+  .foxnav-indicator {
+    --index: 1;
+    height: 3px;
+    background-color: #2DA;
+    border-radius: 3px 3px 0 0;
+    grid-column: var(--index)/calc(var(--index) + 1) !important;
+    grid-row: 1/1;
+    align-self: end;
+  }
+
+  *, *:before, *:after {
+    box-sizing: border-box;
+  }
+
+
+  heading-cat {
+    overflow: hidden;
+    text-align: center;
+   }
+   heading-cat:before,
+   heading-cat:after {
+    background-color: #333;
+    content: "";
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+    width: 50%;
+   }
+   heading-cat:before {
+    right: 0.5em;
+    margin-left: -50%;
+   }
+   heading-cat:after {
+    left: 0.5em;
+    margin-right: -50%;
+   }
+
+   .a-box {
+    display: inline-block;
+    width: 240px;
+    text-align: center;
+  }
+  
+  .img-container {
+      height: 202px;
+      width: 145px;
+      overflow: hidden;
+      display: inline-block;
+  }
+  
+  .img-container img {
+      height: 250px;
+      margin: -35px 0px 0px -70px;
+  }
+  
+  .inner-skew {
+      display: inline-block;
+      border-radius: 20px;
+      padding: 0px;
+      font-size: 0px;
+      margin: 30px 0px 0px 0px;
+      background: #c8c2c2;
+      height: 250px;
+      width: 200px;
+  }
+  
+  .text-container {
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
+    padding: 120px 20px 20px 20px;
+    border-radius: 20px;
+    background: #fff;
+    margin: -120px 0px 0px 0px;
+    line-height: 19px;
+    font-size: 14px;
+  }
+  
+  .text-container h3 {
+    margin: 20px 0px 10px 0px;
+    color: #04bcff;
+    font-size: 18px;
+  }
+
+  #sidebar{
+    display: none !important;
+  }
+
+  /* headlines with lines */
+.decorated{
+  overflow: hidden;
+  text-align: center;
+}
+.decorated > span{
+ position: relative;
+ display: inline-block;
+}
+.decorated > span:before, .decorated > span:after{
+ content: '';
+ position: absolute;
+ top: 50%;
+ border-bottom: 2px solid;
+ width: 100vw;
+ margin: 0 20px;
+}
+.decorated > span:before{
+ right: 100%;
+}
+.decorated > span:after{
+ left: 100%;
+}
+
+.titulo{
+ font-style: oblique 45deg;
+ font-family: 'Oxygen', sans-serif;
+ color: #56a51a;
+}
+
+.subtitulo{
+font-family: 'Oxygen', sans-serif;
+color: #444;
+font-size: 38px;
+}
+
+.afiliacion{
+color: #444;
+font-size: 18px;
+}
+
+.orkid{
+display:none !important;
+}
+
+.resumen{
+font-family: 'Roboto Mono', monospace;
+text-align: justify;
+}
+
+.vertical{
+    border:         none;
+    border-left:    1px solid hsla(200, 10%, 50%,100);
+    height:         100vh;
+    width:          1px;       
+}
+
+/* Tabs*/
+section {
+    padding: 60px 0;
+}
+
+section .section-title {
+    text-align: center;
+    color: #007b5e;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+}
+#tabs{
+    color: #444;
+}
+#tabs h6.section-title{
+    color: #444;
+}
+
+#tabs .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    color: #f3f3f3;
+    background-color: transparent;
+    border-color: transparent transparent #f3f3f3;
+    border-bottom: 4px solid !important;
+    font-size: 20px;
+    font-weight: bold;
+    padding:1rem;
+}
+#tabs .nav-tabs .nav-link {
+    border: 1px solid transparent;
+    border-top-left-radius: .25rem;
+    border-top-right-radius: .25rem;
+    color: #444;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.externo{
+ font-family: 'FontAwesome';
+ content: " \f08e";
+ text-decoration: none;
+}
+
+.detalles{
+font-family: 'Cabin', sans-serif;
+color: #56a51a;
+}
+
+.foxnav-item a:link{
+ text-decoration: none;
+}
+
+
+.foxnav-item a:hover{
+ color: #56a51a;
+}
+
+.foxnav-item a:active{
+ color: #444;
+}
+
+
+/* carousel */
+#quote-carousel 
+{
+  padding: 0 10px 30px 10px;
+  margin-top: 30px;
+}
+
+/* Control buttons  */
+#quote-carousel .carousel-control
+{
+  background: none;
+  color: #222;
+  font-size: 2.3em;
+  text-shadow: none;
+  margin-top: 30px;
+}
+/* Previous button  */
+#quote-carousel .carousel-control.left 
+{
+  left: -12px;
+}
+/* Next button  */
+#quote-carousel .carousel-control.right 
+{
+  right: -12px !important;
+}
+/* Changes the position of the indicators */
+#quote-carousel .carousel-indicators 
+{
+  right: 50%;
+  top: auto;
+  bottom: 0px;
+  margin-right: -19px;
+}
+/* Changes the color of the indicators */
+#quote-carousel .carousel-indicators li 
+{
+  background: #c0c0c0;
+}
+#quote-carousel .carousel-indicators .active 
+{
+  background: #333333;
+}
+#quote-carousel img
+{
+  width: 250px;
+  height: 100px
+}
+/* End carousel */
+
+.item blockquote {
+    border-left: none; 
+    margin: 0;
+}
+
+.item blockquote img {
+    margin-bottom: 10px;
+}
+
+.item blockquote p:before {
+    content: "\f10d";
+    font-family: 'Fontawesome';
+    float: left;
+    margin-right: 10px;
+}
+
+
+
+/**
+  MEDIA QUERIES
+*/
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+    #quote-carousel 
+    {
+      margin-bottom: 0;
+      padding: 0 40px 30px 40px;
+    }
+    
+}
+
+/* Small devices (tablets, up to 768px) */
+@media (max-width: 768px) { 
+    
+    /* Make the indicators larger for easier clicking with fingers/thumb on mobile */
+    
+    #quote-carousel .carousel-indicators {
+        bottom: -20px !important;  
+    }
+    #quote-carousel .carousel-indicators li {
+        display: inline-block;
+        margin: 0px 5px;
+        width: 15px;
+        height: 15px;
+    }
+    #quote-carousel .carousel-indicators li.active {
+        margin: 0px 5px;
+        width: 20px;
+        height: 20px;
+    }
+}
+
+.linea{
+width: 98%;
+border-top: 1px solid #444;
+}
+
+.registration-form{
+	padding: 50px 0;
+}
+
+.registration-form form{
+    background-color: #fff;
+    max-width: 600px;
+    margin: auto;
+    padding: 50px 70px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.075);
+}
+
+.registration-form .form-icon{
+	text-align: center;
+    background-color: #5891ff;
+    border-radius: 50%;
+    font-size: 40px;
+    color: white;
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    margin-bottom: 50px;
+    line-height: 100px;
+}
+
+.registration-form .item{
+	border-radius: 20px;
+    margin-bottom: 25px;
+    padding: 10px 20px;
+}
+
+.registration-form .create-account{
+    border-radius: 30px;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #5791ff;
+    border: none;
+    color: white;
+    margin-top: 20px;
+}
+
+.registration-form .social-media{
+    max-width: 600px;
+    background-color: #fff;
+    margin: auto;
+    padding: 35px 0;
+    text-align: center;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    color: #9fadca;
+    border-top: 1px solid #dee9ff;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.075);
+}
+
+.registration-form .social-icons{
+    margin-top: 30px;
+    margin-bottom: 16px;
+}
+
+.registration-form .social-icons a{
+    font-size: 23px;
+    margin: 0 3px;
+    color: #5691ff;
+    border: 1px solid;
+    border-radius: 50%;
+    width: 45px;
+    display: inline-block;
+    height: 45px;
+    text-align: center;
+    background-color: #fff;
+    line-height: 45px;
+}
+
+.registration-form .social-icons a:hover{
+    text-decoration: none;
+    opacity: 0.6;
+}
+
+@media (max-width: 576px) {
+    .registration-form form{
+        padding: 50px 20px;
+    }
+
+    .registration-form .form-icon{
+        width: 70px;
+        height: 70px;
+        font-size: 30px;
+        line-height: 70px;
+    }
+}
+
+/*
+Estilos de la tarjeta del catálogo
+*/
+
+
+.card {
+    position: relative;
+    width: 253px;
+    height: 390px;
+    background: #000;
+}
+.card .image {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.card .image img {
+    width: 100%;
+    transition: .5s;
+}
+.card:hover .image img {
+    opacity: .5;
+    transform: translateX(30%);/*100%*/
+}
+.card .details {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 70%;/*100%*/
+    height: 100%;
+    background: #56a51a;
+    transition: .5s;
+    transform-origin: left;
+    transform: perspective(2000px) rotateY(-90deg);
+}
+.card:hover .details {
+    transform: perspective(2000px) rotateY(0deg);
+}
+.card .details .center {
+    padding: 20px;
+    text-align: center;
+    background: #fff;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.card .details .center h1 {
+    margin: 0;
+    padding: 0;
+    color: #56a51a;
+    line-height: 20px;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+.card .details .center h1 span {
+    font-size: 14px;
+    color: #56a51a;
+}
+.card .details .center p {
+    margin: 10px 0;
+    padding: 0;
+    color: #262626;
+}
+.card .details .center ul {
+    margin: 10px auto 0;
+    padding: 0;
+    display: table;
+}
+.card .details .center ul li {
+    list-style: none;
+    margin: 0 5px;
+    float: left;
+}
+.card .details .center ul li a {
+    display: block;
+    background: #56a51a;
+    color: #fff;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    transform: .5s;
+}
+.card .details .center ul li a:hover {
+    background: whitesmoke;
+}
+
+.carousel{
+	margin: 30px 0;
+    background: #ccc;
+  	position: relative;
+    box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+.carousel:after {
+	content: "";
+    position: absolute;
+    z-index: -1;
+    box-shadow: 0 0 20px rgba(0,0,0,0.8);
+    height: 60px;
+    bottom: 0px;
+    left: 10px;
+    right: 10px;
+    border-radius: 100px / 20px;
+}
+.carousel .item {
+    text-align: center;
+	overflow: hidden;
+    height: 475px;
+}
+.carousel .item img {
+	max-width: 100%;
+    margin: 0 auto; /* Align slide image horizontally center in Bootstrap v3 */
+}
+.carousel .carousel-control {
+	width: 50px;
+    height: 50px;
+    background: #000;
+    margin: auto 0;
+	opacity: 0.8;
+}
+.carousel .carousel-control:hover {
+	opacity: 0.9;
+}
+.carousel .carousel-control i {
+    font-size: 41px;
+}
+.carousel-caption h3, .carousel-caption p {
+	color: #fff;
+	display: inline-block;
+	font-family: 'Oswald', sans-serif;
+	text-shadow: none;
+	margin-bottom: 20px;
+}
+.carousel-caption h3 {
+	background: rgba(0,0,0,0.9);
+	padding: 12px 24px;
+	font-size: 40px;	
+	text-transform: uppercase;
+}
+.carousel-caption p {
+	background: #8fc93c;
+	padding: 10px 20px;
+	font-size: 20px;
+	font-weight: 300;
+}
+.carousel-action {
+	padding: 10px 0 30px;
+}
+.carousel-action .btn {
+	min-height: 34px;
+	border-radius: 0;
+	margin: 3px;
+	min-width: 150px;
+	text-transform: uppercase;
+	font-family: 'Oswald', sans-serif;
+}
+.carousel-action .btn-primary {
+	border-color: #000;
+	background: none;
+	color: #000;
+}
+.carousel-action .btn-primary:hover {
+	background: #000;
+	color: #fff;
+}
+.carousel-action .btn-success {
+	background: #8fc93c;
+	border: none;
+}
+.carousel-action .btn-success:hover {
+	background: #87bd35;
+}
+.carousel-indicators li, .carousel-indicators li.active {
+	width: 11px;
+	height: 11px;
+	border-radius: 50%;
+	margin: 1px 6px;
+}
+.carousel-indicators li {
+	background: transparent;
+	border: 1px solid #fff;
+}
+.carousel-indicators li.active {
+	background: #8fc93c;
+	border-color: #8fc93c;
+}
+
+.encabezados{
+ font-family: 'Manrope', sans-serif;
+ color: #494949;
+ margin-bottom: 0px;
+ text-transform: uppercase;
+}
+
+.ancla_superior{
+ color:inherit;
+ text-decoration:none;
+ font-size:25px;
+}
+
+.linea-titulo{
+ border-bottom: 3px solid #56a51a;
+ width: 60px;
+ height: 3px;
+ margin-bottom: 25px;
+}
+
+.img-social{
+ height:58px;
+}
+
+.img-bindani{
+ height: 58px;
+}
+
+.img-scholar{
+ height: 58px;
+ padding-left:13em;
+}
+
+
+/*
+
+username: 
+5541940456
+password: 
+gps1234
+sitedomain: 
+https://www.mitelcel.com/mitelcel
+CCode: 
+52
+Type: 
+MSISDN
+Invocation: 
+iFrame
+MSISDN: 
+Source: 
+*/

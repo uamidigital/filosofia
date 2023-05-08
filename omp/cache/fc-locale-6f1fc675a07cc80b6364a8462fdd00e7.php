@@ -1,0 +1,18 @@
+<?php return array (
+  'plugins.themes.default.name' => 'Tema predeterminado',
+  'plugins.themes.default.description' => 'Este tema implementa el tema predeterminado.',
+  'plugins.themes.default.option.typography.label' => 'Tipografía',
+  'plugins.themes.default.option.typography.description' => 'Elija una combinación de fuentes que se adapte a esta revista.',
+  'plugins.themes.default.option.typography.notoSans' => 'Noto Sans: Una nativa digital diseñada por Google con un extenso soporte idiomático.',
+  'plugins.themes.default.option.typography.notoSerif' => 'Noto Serif: Una variante de tipo serif.',
+  'plugins.themes.default.option.typography.notoSerif_notoSans' => 'Noto Serif/Noto Sans: Combinación de serif para encabezados y sans-serif para textos.',
+  'plugins.themes.default.option.typography.notoSans_notoSerif' => 'Noto Sans/Noto Serif: Combinación de sans-serif para encabezados y serif para textos.',
+  'plugins.themes.default.option.typography.lato' => 'Lato: Una fuente actual y aclamada de tipo sans-serif.',
+  'plugins.themes.default.option.typography.lora' => 'Lora: Una fuente de tipo serif ancha, adecuada para la lectura.',
+  'plugins.themes.default.option.typography.lora_openSans' => 'Lora/Open Sans: Combinación de serif para encabezados y sans-serif para textos.',
+  'plugins.themes.default.option.colour.label' => 'Color',
+  'plugins.themes.default.option.colour.description' => 'Elija un color para la cabecera.',
+  'plugins.themes.default.option.useHomepageImageAsHeader.option' => 'Mostrar la imagen de página de inicio como el fondo de la cabecera.',
+  'plugins.themes.default.option.useHomepageImageAsHeader.description' => 'Cuando se haya cargado una imagen para la página de inicio, mostrarla en el fondo de la cabecera en vez de en su posición habitual de la página de inicio.',
+  'plugins.themes.default.option.useHomepageImageAsHeader.label' => 'Imagen de fondo de la cabecera',
+);
