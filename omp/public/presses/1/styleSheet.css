@@ -84,7 +84,17 @@
     /*tamaño de la imagen de bindani*/
     width: 120px;
     margin: 5px;
+    float:left;
 }
+
+.pie-pagina .grupo-1 .box .go img{
+    /*tamaño de la imagen de bindani*/
+    width: 40px;
+    margin: 5px;
+    overflow:hidden;
+}
+
+
 
 
 /*PARRAGOS DE TEXTO*/

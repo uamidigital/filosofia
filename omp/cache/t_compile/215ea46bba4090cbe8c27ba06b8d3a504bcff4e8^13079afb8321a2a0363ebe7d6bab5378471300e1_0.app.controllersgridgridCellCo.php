@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.1.0, created on 2023-05-08 22:38:54
+/* Smarty version 4.1.0, created on 2023-05-09 19:46:42
   from 'app:controllersgridgridCellCo' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.1.0',
-  'unifunc' => 'content_64595dde689513_39541412',
+  'unifunc' => 'content_645a8702cd80c5_18356821',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '13079afb8321a2a0363ebe7d6bab5378471300e1' => 
     array (
       0 => 'app:controllersgridgridCellCo',
-      1 => 1675470383,
+      1 => 1683589556,
       2 => 'app',
     ),
   ),
@@ -21,8 +21,8 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'app:linkAction/linkAction.tpl' => 1,
   ),
 ),false)) {
-function content_64595dde689513_39541412 (Smarty_Internal_Template $_smarty_tpl) {
-$_smarty_tpl->_checkPlugins(array(0=>array('file'=>'/Applications/XAMPP/xamppfiles/htdocs/filoso/omp/lib/pkp/lib/vendor/smarty/smarty/libs/plugins/modifier.truncate.php','function'=>'smarty_modifier_truncate',),));
+function content_645a8702cd80c5_18356821 (Smarty_Internal_Template $_smarty_tpl) {
+$_smarty_tpl->_checkPlugins(array(0=>array('file'=>'C:\\xampp\\htdocs\\filoso\\filosofia\\omp\\lib\\pkp\\lib\\vendor\\smarty\\smarty\\libs\\plugins\\modifier.truncate.php','function'=>'smarty_modifier_truncate',),));
 ?>
 
 <?php $_smarty_tpl->_assignInScope('_label', $_smarty_tpl->tpl_vars['label']->value);?>

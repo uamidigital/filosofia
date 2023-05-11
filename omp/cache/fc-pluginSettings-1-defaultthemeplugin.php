@@ -1,6 +1,6 @@
 <?php return array (
   'baseColour' => '#173167',
-  'enabled' => true,
+  'enabled' => false,
   'typography' => 'notoSans_notoSerif',
   'useHomepageImageAsHeader' => 'false',
 );

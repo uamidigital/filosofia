@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.1.0, created on 2023-05-08 22:38:30
+/* Smarty version 4.1.0, created on 2023-05-09 18:45:30
   from 'app:frontendcomponentsheader.' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.1.0',
-  'unifunc' => 'content_64595dc6e160b5_96991024',
+  'unifunc' => 'content_645a78aab3b846_10887569',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '10ae5578a0959129b8d4ceeb9f99c1bb2a9cbd65' => 
     array (
       0 => 'app:frontendcomponentsheader.',
-      1 => 1675470383,
+      1 => 1683589556,
       2 => 'app',
     ),
   ),
@@ -22,8 +22,8 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'app:frontend/components/skipLinks.tpl' => 1,
   ),
 ),false)) {
-function content_64595dc6e160b5_96991024 (Smarty_Internal_Template $_smarty_tpl) {
-$_smarty_tpl->_checkPlugins(array(0=>array('file'=>'/Applications/XAMPP/xamppfiles/htdocs/filoso/omp/lib/pkp/lib/vendor/smarty/smarty/libs/plugins/modifier.replace.php','function'=>'smarty_modifier_replace',),));
+function content_645a78aab3b846_10887569 (Smarty_Internal_Template $_smarty_tpl) {
+$_smarty_tpl->_checkPlugins(array(0=>array('file'=>'C:\\xampp\\htdocs\\filoso\\filosofia\\omp\\lib\\pkp\\lib\\vendor\\smarty\\smarty\\libs\\plugins\\modifier.replace.php','function'=>'smarty_modifier_replace',),));
 $_smarty_tpl->_assignInScope('showingLogo', true);
 if (!$_smarty_tpl->tpl_vars['displayPageHeaderLogo']->value) {
 $_smarty_tpl->_assignInScope('showingLogo', false);

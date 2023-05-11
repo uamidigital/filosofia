@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.1.0, created on 2023-05-08 22:38:31
+/* Smarty version 4.1.0, created on 2023-05-09 18:45:34
   from 'plugins-1-plugins-blocks-browse-blocks-browse:block.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.1.0',
-  'unifunc' => 'content_64595dc712c231_26457108',
+  'unifunc' => 'content_645a78ae29b239_20629424',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'e9acfaa63992be8b73da417127735d220ff56549' => 
     array (
       0 => 'plugins-1-plugins-blocks-browse-blocks-browse:block.tpl',
-      1 => 1663726449,
+      1 => 1683589558,
       2 => 'plugins-1-plugins-blocks-browse-blocks-browse',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_64595dc712c231_26457108 (Smarty_Internal_Template $_smarty_tpl) {
+function content_645a78ae29b239_20629424 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="pkp_block block_browse">
 	<span class="title">
 		<?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['translate'][0], array( array('key'=>"plugins.block.browse"),$_smarty_tpl ) );?>

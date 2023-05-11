@@ -126,7 +126,7 @@ enable_beacon = On
 driver = mysqli
 host = localhost
 username = root
-password = "abc123.,"
+password = ""
 name = filoso
 
 ; Set the non-standard port and/or socket, if used
@@ -200,7 +200,7 @@ connection_charset = utf8
 ; Complete path to directory to store uploaded files
 ; (This directory should not be directly web-accessible)
 ; Windows users should use forward slashes
-files_dir = /Applications/XAMPP/xamppfiles/htdocs/filoso/files
+files_dir = /xampp/htdocs/filoso/filosofia/files
 
 ; Path to the directory to store public uploaded files
 ; (This directory should be web-accessible and the specified path

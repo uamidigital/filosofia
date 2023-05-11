@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.1.0, created on 2023-05-08 22:38:30
+/* Smarty version 4.1.0, created on 2023-05-09 18:45:31
   from 'app:frontendcomponentsheaderH' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.1.0',
-  'unifunc' => 'content_64595dc6e457c3_66482144',
+  'unifunc' => 'content_645a78ab48b987_88459893',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'da5cddfde2ebc97f3525f2500ecb83429bd5fe44' => 
     array (
       0 => 'app:frontendcomponentsheaderH',
-      1 => 1675470383,
+      1 => 1683589556,
       2 => 'app',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_64595dc6e457c3_66482144 (Smarty_Internal_Template $_smarty_tpl) {
+function content_645a78ab48b987_88459893 (Smarty_Internal_Template $_smarty_tpl) {
 ?><head>
 	<meta charset="<?php echo call_user_func_array($_smarty_tpl->registered_plugins[ 'modifier' ][ 'escape' ][ 0 ], array( $_smarty_tpl->tpl_vars['defaultCharset']->value ));?>
 ">

@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.1.0, created on 2023-05-08 22:38:30
+/* Smarty version 4.1.0, created on 2023-05-09 18:45:30
   from 'app:frontendpagesindex.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.1.0',
-  'unifunc' => 'content_64595dc6dfafb7_08407486',
+  'unifunc' => 'content_645a78aa358989_82447251',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '39b1599f8f1b1d44415ae2df41968bb30a1154ef' => 
     array (
       0 => 'app:frontendpagesindex.tpl',
-      1 => 1675470241,
+      1 => 1683589579,
       2 => 'app',
     ),
   ),
@@ -25,8 +25,8 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'app:frontend/components/footer.tpl' => 1,
   ),
 ),false)) {
-function content_64595dc6dfafb7_08407486 (Smarty_Internal_Template $_smarty_tpl) {
-$_smarty_tpl->_checkPlugins(array(0=>array('file'=>'/Applications/XAMPP/xamppfiles/htdocs/filoso/omp/lib/pkp/lib/vendor/smarty/smarty/libs/plugins/modifier.date_format.php','function'=>'smarty_modifier_date_format',),));
+function content_645a78aa358989_82447251 (Smarty_Internal_Template $_smarty_tpl) {
+$_smarty_tpl->_checkPlugins(array(0=>array('file'=>'C:\\xampp\\htdocs\\filoso\\filosofia\\omp\\lib\\pkp\\lib\\vendor\\smarty\\smarty\\libs\\plugins\\modifier.date_format.php','function'=>'smarty_modifier_date_format',),));
 $_smarty_tpl->_subTemplateRender("app:frontend/components/header.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>
 
