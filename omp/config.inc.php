@@ -29,7 +29,7 @@
 installed = On
 
 ; The canonical URL to the OMP installation (excluding the trailing slash)
-base_url = "http://localhost/filoso"
+base_url = "http://localhost/filosofia/omp"
 
 ; Session cookie name
 session_cookie_name = OMPSID
@@ -99,7 +99,7 @@ restful_urls = Off
 ; An empty string indicates that all hosts should be trusted (not recommended!)
 ; Example:
 ; allowed_hosts = '["myjournal.tld", "anotherjournal.tld", "mylibrary.tld"]'
-allowed_hosts = "[\"148.206.53.236\", "amoxcalli.izt.uam.mx", "localhost","127.0.0.1"]"
+allowed_hosts = "[\"localhost\"]"
 
 ; Allow the X_FORWARDED_FOR header to override the REMOTE_ADDR as the source IP
 ; Set this to "On" if you are behind a reverse proxy and you control the
@@ -126,8 +126,8 @@ enable_beacon = On
 driver = mysqli
 host = localhost
 username = root
-password = "abc123.,"
-name = filoso
+password = 
+name = bdfilosofia
 
 ; Set the non-standard port and/or socket, if used
 ; port = 3306
@@ -200,7 +200,7 @@ connection_charset = utf8
 ; Complete path to directory to store uploaded files
 ; (This directory should not be directly web-accessible)
 ; Windows users should use forward slashes
-files_dir = /Applications/XAMPP/xamppfiles/htdocs/filoso/files
+files_dir = "C:/xampp/htdocs/filosofia/files"
 
 ; Path to the directory to store public uploaded files
 ; (This directory should be web-accessible and the specified path
@@ -418,7 +418,7 @@ result_cache_hours = 1
 oai = On
 
 ; OAI Repository identifier
-repository_id = publicacionesdepartamentofilosofia
+repository_id = "omp.localhost"
 
 
 ;;;;;;;;;;;;;;;;;;;;;;

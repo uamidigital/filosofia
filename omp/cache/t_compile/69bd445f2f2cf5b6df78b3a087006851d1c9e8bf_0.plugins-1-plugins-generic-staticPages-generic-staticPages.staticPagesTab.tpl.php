@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.1.0, created on 2023-05-08 22:38:54
+/* Smarty version 4.1.0, created on 2023-05-13 00:55:25
   from 'plugins-1-plugins-generic-staticPages-generic-staticPages:staticPagesTab.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.1.0',
-  'unifunc' => 'content_64595dde14b486_89531137',
+  'unifunc' => 'content_645ec3dd125e35_78306600',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '69bd445f2f2cf5b6df78b3a087006851d1c9e8bf' => 
     array (
       0 => 'plugins-1-plugins-generic-staticPages-generic-staticPages:staticPagesTab.tpl',
-      1 => 1663726622,
+      1 => 1683930612,
       2 => 'plugins-1-plugins-generic-staticPages-generic-staticPages',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_64595dde14b486_89531137 (Smarty_Internal_Template $_smarty_tpl) {
+function content_645ec3dd125e35_78306600 (Smarty_Internal_Template $_smarty_tpl) {
 ?><tab id="staticPages" label="<?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['translate'][0], array( array('key'=>"plugins.generic.staticPages.staticPages"),$_smarty_tpl ) );?>
 ">
 	<?php $_smarty_tpl->smarty->ext->_capture->open($_smarty_tpl, 'default', 'staticPageGridUrl', null);

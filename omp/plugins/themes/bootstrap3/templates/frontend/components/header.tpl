@@ -38,9 +38,9 @@
 		<header class="navbar navbar-default" id="headerNavigationContainer" role="banner" style="background-color: #242424; color: white;">
 
 			{* User profile, login, etc, navigation menu*}
-			<div class="container-fluid" style="color: whitesmoke;">
+			<div class="container-fluid" style="color: #297FA6;">
 				<div class="row">
-					<nav aria-label="{translate|escape key="common.navigation.user"}" style="color: whitesmoke;">
+					<nav aria-label="{translate|escape key="common.navigation.user"}" style="color: #297FA6;">
 						{load_menu name="user" id="navigationUser" ulClass="nav nav-pills tab-list pull-right"}
 					</nav>
 				</div><!-- .row -->
@@ -49,8 +49,7 @@
 			<div class="container-fluid">
 
 				<div class="navbar-header">
-
-
+				<img src="{$baseUrl}/templates/images/uam/logotipo.png" alt="{$applicationName|escape}" title="{$applicationName|escape}" width="400" style="-webkit-filter: invert(100%); filter: invert(100%);" />
 					{* Logo or site title. Only use <h1> heading on the homepage.
 					   Otherwise that should go to the page title. *}
 					{if $requestedOp == 'index'}
@@ -87,7 +86,7 @@
 		</header><!-- .pkp_structure_head -->
 
 		{capture assign="primaryMenu"}
-			{load_menu name="primary" id="main-navigation" ulClass="foxnav-items" liClass="foxnav-item"}
+			{load_menu name="primary" id="main-navigation" ulClass="foxnav-items" liClass="foxnav-item foxnav-right"}
 		{/capture}
 
 		{* Mobile hamburger menu *}

@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.1.0, created on 2023-05-08 22:38:31
+/* Smarty version 4.1.0, created on 2023-05-13 00:40:12
   from 'plugins-1-plugins-blocks-information-blocks-information:block.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.1.0',
-  'unifunc' => 'content_64595dc713e577_40670625',
+  'unifunc' => 'content_645ec04cbfcfa3_52006364',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '14f9911247ec6873ffa4c91aec4a3a366a6699b0' => 
     array (
       0 => 'plugins-1-plugins-blocks-information-blocks-information:block.tpl',
-      1 => 1663726449,
+      1 => 1683930610,
       2 => 'plugins-1-plugins-blocks-information-blocks-information',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_64595dc713e577_40670625 (Smarty_Internal_Template $_smarty_tpl) {
+function content_645ec04cbfcfa3_52006364 (Smarty_Internal_Template $_smarty_tpl) {
 if (!empty($_smarty_tpl->tpl_vars['forReaders']->value) || !empty($_smarty_tpl->tpl_vars['forAuthors']->value) || !empty($_smarty_tpl->tpl_vars['forLibrarians']->value)) {?>
 <div class="pkp_block block_information">
 	<h2 class="title">

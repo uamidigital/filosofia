@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.1.0, created on 2023-05-08 22:38:54
+/* Smarty version 4.1.0, created on 2023-05-13 00:55:25
   from 'plugins-1-plugins-generic-customLocale-generic-customLocale:customLocaleTab.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.1.0',
-  'unifunc' => 'content_64595dde150a70_68846453',
+  'unifunc' => 'content_645ec3dd24baf2_31059373',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '4031a374f3d30318a776b3fe29f67b1faf79bff2' => 
     array (
       0 => 'plugins-1-plugins-generic-customLocale-generic-customLocale:customLocaleTab.tpl',
-      1 => 1664322557,
+      1 => 1683930611,
       2 => 'plugins-1-plugins-generic-customLocale-generic-customLocale',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_64595dde150a70_68846453 (Smarty_Internal_Template $_smarty_tpl) {
+function content_645ec3dd24baf2_31059373 (Smarty_Internal_Template $_smarty_tpl) {
 ?><tab id="customLocale" label="<?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['translate'][0], array( array('key'=>"plugins.generic.customLocale.customLocale"),$_smarty_tpl ) );?>
 ">
 	<?php $_smarty_tpl->smarty->ext->_capture->open($_smarty_tpl, 'default', 'customLocaleGridUrl', null);
