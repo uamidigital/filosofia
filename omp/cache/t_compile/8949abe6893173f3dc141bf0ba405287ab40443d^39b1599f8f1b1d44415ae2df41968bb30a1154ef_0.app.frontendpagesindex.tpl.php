@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.1.0, created on 2023-05-13 00:37:50
+/* Smarty version 4.1.0, created on 2023-05-16 20:39:21
   from 'app:frontendpagesindex.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.1.0',
-  'unifunc' => 'content_645ebfbe779462_82926529',
+  'unifunc' => 'content_6463cdd9ab1327_13075612',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '39b1599f8f1b1d44415ae2df41968bb30a1154ef' => 
     array (
       0 => 'app:frontendpagesindex.tpl',
-      1 => 1683930616,
+      1 => 1684262359,
       2 => 'app',
     ),
   ),
@@ -25,12 +25,90 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'app:frontend/components/footer.tpl' => 1,
   ),
 ),false)) {
-function content_645ebfbe779462_82926529 (Smarty_Internal_Template $_smarty_tpl) {
+function content_6463cdd9ab1327_13075612 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_checkPlugins(array(0=>array('file'=>'C:\\xampp\\htdocs\\filosofia\\omp\\lib\\pkp\\lib\\vendor\\smarty\\smarty\\libs\\plugins\\modifier.date_format.php','function'=>'smarty_modifier_date_format',),));
 $_smarty_tpl->_subTemplateRender("app:frontend/components/header.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>
 
 <div class="page page_homepage">
+
+<div  class="container">
+<div class="row">
+	<div class="col-sm-12">
+		<div class="navbar" style="background-image: url(<?php echo $_smarty_tpl->tpl_vars['baseUrl']->value;?>
+/templates/images/uam/iztgr.png);position: absolute;bottom: 10;width: 97.4%;height: 10%;"></div>
+	</div>
+</div>
+<div class="row">
+	<div class="col-sm-12">
+		<div id="myCarousel" class="carousel slide" data-ride="carousel">
+			<!-- Indicators -->
+			<ol class="carousel-indicators">
+			<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+			<li data-target="#myCarousel" data-slide-to="1"></li>
+			<li data-target="#myCarousel" data-slide-to="2"></li>
+			</ol>
+		
+			<!-- Wrapper for slides -->
+			<div class="carousel-inner">
+				<div class="item active">
+					<img src="<?php echo $_smarty_tpl->tpl_vars['baseUrl']->value;?>
+/templates/images/uam/plantilla.jpg" alt="Los Angeles">
+				</div>
+		
+				<div class="item">
+					<img src="<?php echo $_smarty_tpl->tpl_vars['baseUrl']->value;?>
+/templates/images/uam/plantilla.jpg" alt="Los Angeles">
+				</div>
+		
+				<div class="item">
+					<img src="<?php echo $_smarty_tpl->tpl_vars['baseUrl']->value;?>
+/templates/images/uam/plantilla.jpg" alt="Los Angeles">
+				</div>
+			</div>
+		
+			<!-- Left and right controls -->
+			<a class="left carousel-control" href="#myCarousel" data-slide="prev">
+			<span class="glyphicon glyphicon-chevron-left"></span>
+			<span class="sr-only">Previous</span>
+			</a>
+			<a class="right carousel-control" href="#myCarousel" data-slide="next">
+			<span class="glyphicon glyphicon-chevron-right"></span>
+			<span class="sr-only">Next</span>
+			</a>
+		</div>
+	</div>
+</div>
+</div>
+<div class="container">
+<div class="row">
+	<div class="col-sm-12" align="center">
+		
+			<ul class="nav nav-tabs"align="center">
+				<li class="active"><a data-toggle="tab" href="#home">Novedades</a></li>
+				<li><a data-toggle="tab" href="#menu1">Destacado</a></li>
+				<li><a data-toggle="tab" href="#menu2">Proximos</a></li>
+				<li><a data-toggle="tab" href="#">Ir a catálogo</a></li>
+			</ul>
+		
+		<div class="tab-content">
+			<div id="home" class="tab-pane fade in active">
+				<h3>HOME</h3>
+				<p>Some content.</p>
+			</div>
+			<div id="menu1" class="tab-pane fade">
+				<h3>Menu 1</h3>
+				<p>Some content in menu 1.</p>
+			</div>
+			<div id="menu2" class="tab-pane fade">
+				<h3>Menu 2</h3>
+				<p>Some content in menu 2.</p>
+			</div>
+			
+		</div>
+	</div>
+</div>
+</div>
 
 		<?php if (!$_smarty_tpl->tpl_vars['activeTheme']->value->getOption('useHomepageImageAsHeader') && $_smarty_tpl->tpl_vars['homepageImage']->value) {?>
 		<img src="<?php echo $_smarty_tpl->tpl_vars['publicFilesDir']->value;?>

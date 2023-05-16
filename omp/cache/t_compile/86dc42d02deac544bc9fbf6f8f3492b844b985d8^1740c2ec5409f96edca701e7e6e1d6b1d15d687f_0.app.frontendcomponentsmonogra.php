@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 4.1.0, created on 2023-05-16 20:18:44
+/* Smarty version 4.1.0, created on 2023-05-16 20:27:02
   from 'app:frontendcomponentsmonogra' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.1.0',
-  'unifunc' => 'content_6463c90438f5e3_81090260',
+  'unifunc' => 'content_6463caf6b30935_58428524',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -21,7 +21,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'app:frontend/objects/monograph_summary.tpl' => 1,
   ),
 ),false)) {
-function content_6463c90438f5e3_81090260 (Smarty_Internal_Template $_smarty_tpl) {
+function content_6463caf6b30935_58428524 (Smarty_Internal_Template $_smarty_tpl) {
 if (!$_smarty_tpl->tpl_vars['heading']->value) {
 $_smarty_tpl->_assignInScope('heading', "h2");
 }

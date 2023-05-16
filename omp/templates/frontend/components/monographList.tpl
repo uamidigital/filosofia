@@ -26,7 +26,6 @@
 {/if}
 
 <div class="cmp_monographs_list">
-
 	{* Optional title *}
 	{if $titleKey}
 		<{$heading} class="title">

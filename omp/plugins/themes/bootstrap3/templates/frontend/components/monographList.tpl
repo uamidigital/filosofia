@@ -25,7 +25,9 @@
 {assign var="monographHeading" value="h5"}
 {/if}
 
-<div class="cmp_monographs_list">
+
+<div class="cmp_monographs_list">    
+   
     <div class="container">
         <div class="row">
             
