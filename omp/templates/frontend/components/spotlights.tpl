@@ -10,6 +10,8 @@
  *
  * @uses $spotlights array Selected spotlights to promote on the homepage
  *}
+
+ 
 <div class="cmp_spotlights">
 	<ul class="list">
 		{foreach name="spotlights" from=$spotlights item=spotlight}

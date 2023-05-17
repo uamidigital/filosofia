@@ -15,6 +15,8 @@
  * @uses SectionTitleKey string A key that must be translated to get the
  *       $sectionTitle
  *}
+
+ 
 {if in_array(ROLE_ID_MANAGER, (array) $userRoles)}
 
 	{* Render the $sectionTitle if we only have a translation key *}

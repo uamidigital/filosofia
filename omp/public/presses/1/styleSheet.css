@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 
+/*ESTILOS DEL FOOTER */
 
 .pkp_head_wrapper {
 
@@ -19,7 +20,7 @@
 .pie-pagina {
     width: 100%;
     background-color: #181A1A;
-    font-family: 'Montserrat'!important;
+    font-family: 'Montserrat' !important;
 }
 
 /*CREAR 3 COLUMNAS*/
@@ -54,7 +55,7 @@
 
 /*TITULOS*/
 .pie-pagina .grupo-1 .box h2 {
-    font-family: 'Montserrat'!important;
+    font-family: 'Montserrat' !important;
     /*TIPO DE LETRA*/
     font-weight: 100;
     /*ANCHO DE LA LETRA*/
@@ -68,7 +69,7 @@
 }
 
 .pie-pagina .grupo-1 .box p {
-    font-family: 'Montserrat'!important;
+    font-family: 'Montserrat' !important;
     /*TIPO DE LETRA*/
     font-weight: 100;
     /*ANCHO DE LA LETRA*/
@@ -84,14 +85,14 @@
     /*tamaño de la imagen de bindani*/
     width: 120px;
     margin: 5px;
-    float:left;
+    float: left;
 }
 
-.pie-pagina .grupo-1 .box .go img{
+.pie-pagina .grupo-1 .box .go img {
     /*tamaño de la imagen de bindani*/
     width: 40px;
     margin: 5px;
-    overflow:hidden;
+    overflow: hidden;
 }
 
 
@@ -154,11 +155,12 @@
     text-align: center;
     color: #fff;
     width: 100%;
-    
+
 }
 
 
-.gp2{ /*clase para que la imagen de la cinta verde este en toda la oantalla*/
+.gp2 {
+    /*clase para que la imagen de la cinta verde este en toda la oantalla*/
     width: 100%;
 }
 
@@ -174,7 +176,8 @@
 }
 
 
-.grupo-3 img { /*tamaño de la imagen logo iztapalapa de hasta abajo*/
+.grupo-3 img {
+    /*tamaño de la imagen logo iztapalapa de hasta abajo*/
     /*tamaño de la imagen de bindani*/
     width: 500px;
     display: block;
@@ -187,9 +190,10 @@
     font-size: 15px;
 }
 
-.tamañogoogle{ /*clase para que la imagen google quede diferente al tamaño de bindani*/
-   width: 0px;
-   height: 30px;
+.tamañogoogle {
+    /*clase para que la imagen google quede diferente al tamaño de bindani*/
+    width: 0px;
+    height: 30px;
 }
 
 /*PANTALLA*/
@@ -201,4 +205,222 @@
         padding: 35px 0px;
 
     }
+}
+
+
+
+
+
+
+
+
+
+/* ESTILOS DEL LOGIN*/
+
+
+.form-body {
+    width: 70%;
+    min-width: 300px;
+    
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    margin: auto;
+    /*centrar el cuadro del login*/
+    border: solid 1px #57A519;
+        /*color del contorno*/
+        
+}
+
+
+
+.entrar {
+    /*texto de bienvenido*/
+    text-align: center; /*ubicación del form*/
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: black;
+    /*COLOR DE INISIAR SESIÓN*/
+    margin-bottom: 25px;
+
+}
+
+.texto {
+    /*texto de bienvenido*/
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #181A1A;
+    /*COLOR DE INISIAR SESIÓN*/
+    margin-bottom: 25px;
+
+}
+
+
+.olvidado-contraseña {
+    margin-left: 50px;
+    text-decoration: none;
+    color: #57A519;
+}
+
+.olvidado-contraseña:hover{
+    color: #57A519;
+    font-size: 30px;
+}
+
+
+
+.conectado {
+
+    text-decoration: none;
+    color: gray;
+    font-size: 0.9rem;
+    overflow: hidden;
+}
+
+
+
+.form-body input {
+    display: block;
+    margin: auto;
+    margin-left: 70px;
+    height: 40px;
+    width: 95%;
+    padding-left: 10px;
+    color: gray;
+    /*COLOR DE LAS LETRAS EN LA CAJA DE TEXTO*/
+    border: 1px solid#A66111;
+    /*COLOR DE LAS CAJAS DE TEXTO*/
+    border-radius: 1rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: transparent;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    font-size: 1rem;
+    outline: none;
+}
+
+
+.form-body input[type="password"] {
+    background: #f7f6f6a1;
+    display: block;
+    margin: auto;
+    margin-left: 60px;
+    height: 35px;
+    width: 95%;
+    padding-left: 10px;
+    color: rgb(187, 184, 184);
+    /*COLOR DE LAS LETRAS EN LA CAJA DE TEXTO ya que se escribio*/
+    border: 1px solid#f7f6f6a1;
+    /*COLOR DE LAS CAJAS DE TEXTO*/
+    border-radius: 0.1rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    font-size: 1rem;
+    outline: none;
+}
+
+.form-body input[type="text"] {
+    background: #f7f6f6a1;
+    
+    margin: auto;
+    margin-left: 60px;
+    height: 35px;
+    width: 95px;
+    padding-left: 10px;
+    color: rgb(187, 184, 184);
+    /*COLOR DE LAS LETRAS EN LA CAJA DE TEXTO ya que se escribio*/
+    border: 1px solid#f7f6f6a1;
+    /*COLOR DE LAS CAJAS DE TEXTO*/
+    border-radius: 0.1rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    font-size: 1rem;
+    outline: none;
+}
+
+
+::placeholder {
+    /*fondo de textgo de input ANTES DE ESCRIBIR*/
+    font-size: 1rem;
+    color: rgba(167, 163, 163, 0.596);
+}
+
+
+
+.form-body input[type="checkbox"] {
+    float: left;
+    width: 20px;
+    height: 20px;
+    margin-left: 90px;
+    background-color: #57A519;
+}
+
+.form-body button {
+    /*propiedades del boton*/
+    display: block;
+    margin-left: 140px;
+    margin-bottom: 30px;
+    height: 40px;
+    width: 100px;
+    background: #57A519;
+    color: white;
+    cursor: pointer;
+    /*outline: none;*/
+    border: 1px solid #57A519;
+    /*transition: all .5s case;*/
+    border-radius: 4px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    font-size: 1rem;
+    float:left;
+}
+
+
+.registrarse {
+    overflow:hidden;
+    display: block;
+    padding-top: 10px;
+    margin-left: 94px;
+    margin-top: 23px;
+    margin-bottom: 30px;
+    height: 40px;
+    width: 100px;
+    background: white;
+    color: #57A519;
+    cursor: pointer;
+    /*outline: none;*/
+    border: 1px solid #57A519;
+    /*transition: all .5s case;*/
+    border-radius: 4px;
+    font-size: 1rem;
+    text-decoration: none;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+
+.cajon{
+    width: 100%;
+   
+}
+
+.degradado{
+    width: 30%;
+    height: 478px;
+    background:#57A519;
+    opacity: 0.7;
+    float:left;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 5px;
+    
+}
+
+.login-derecha{
+    overflow:hidden;
+}
+
+.cmp_breadcrumbs{
+    padding-left: 250px;
 }

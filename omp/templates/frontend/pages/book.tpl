@@ -12,7 +12,9 @@
  * @uses $publishedSubmission PublishedSubmission The published submission object.
  * @uses $series Series The series this monograph is assigned to, if any.
  *}
+
 {include file="frontend/components/header.tpl" pageTitleTranslated=$publishedSubmission->getLocalizedFullTitle()}
+
 
 <div class="page page_book">
 	{* Display book details *}

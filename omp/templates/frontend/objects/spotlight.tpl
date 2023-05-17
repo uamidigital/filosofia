@@ -18,6 +18,8 @@
  *       is empty or set to the desired CSS class
  * @uses $description string A description to display with this spotlight
  *}
+
+ 
 <div class="obj_spotlight {$hasCoverImage} {$type}">
 
 	{if $coverImage}

@@ -19,6 +19,7 @@
  *}
 {include file="frontend/components/header.tpl" pageTitleTranslated=$series->getLocalizedTitle()|escape}
 
+
 <div class="page page_catalog_series">
 
 	{* Breadcrumb *}

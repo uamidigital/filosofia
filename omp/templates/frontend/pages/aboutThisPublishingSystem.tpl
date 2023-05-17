@@ -11,6 +11,8 @@
  * @uses $appVersion string Current version of OJS
  * @uses $contactUrl string URL to the journal's contact page
  *}
+
+ 
 {include file="frontend/components/header.tpl" pageTitle="about.aboutSoftware"}
 
 <div class="page page_about_publishing_system">

@@ -8,6 +8,7 @@
  * Primary navigation menu list for OMP
  *}
 
+
 <ul id="navigationPrimary" class="pkp_navigation_primary pkp_nav_list">
 
 	{if $enableAnnouncements}

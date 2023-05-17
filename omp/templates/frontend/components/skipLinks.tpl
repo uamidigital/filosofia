@@ -19,4 +19,5 @@
 		{/if}
 	{/if}
 	<a href="#pkp_content_footer">{translate key="navigation.skip.footer"}</a>
+	
 </div>

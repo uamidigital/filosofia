@@ -15,13 +15,17 @@
  *}
 
 <nav class="cmp_breadcrumbs" role="navigation" aria-label="{translate key="navigation.breadcrumbLabel"}">
+
 	<ol>
 		<li>
 			<a href="{url page="index" router=$smarty.const.ROUTE_PAGE}">
-				{translate key="common.homepageNavigationLabel"}
+				{translate key="common.homepageNavigationLabel" }
 			</a>
 			<span class="separator">{translate key="navigation.breadcrumbSeparator"}</span>
 		</li>
+		
+
+
 		<li class="current">
 			<span aria-current="page">
 				{if $currentTitleKey}
@@ -31,6 +35,9 @@
 				{/if}
 			</span>
 		</li>
+		
 	</ol>
 </nav>
+
+
 

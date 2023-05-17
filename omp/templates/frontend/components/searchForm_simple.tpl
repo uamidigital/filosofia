@@ -9,6 +9,8 @@
  *
  * @uses $searchQuery string Previously input search query
  *}
+
+ 
 {if !$currentJournal || $currentJournal->getData('publishingMode') != $smarty.const.PUBLISHING_MODE_NONE}
 	{capture name="searchFormUrl"}{url page="search" op="search" escape=false}{/capture}
 	{assign var=formUrlParameters value=[]}{* Prevent Smarty warning *}

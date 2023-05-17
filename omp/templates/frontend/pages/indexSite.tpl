@@ -8,7 +8,10 @@
  * Site index.
  *
  *}
+
+
 {include file="frontend/components/header.tpl"}
+
 
 <div class="page_index_site">
 

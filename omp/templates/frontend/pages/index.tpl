@@ -17,7 +17,10 @@
  * @uses $additionalHomeContent string HTML blob of arbitrary content added by
  *  an editor/admin.
  *}
+
+ 
 {include file="frontend/components/header.tpl"}
+
 
 <div class="page page_homepage">
 

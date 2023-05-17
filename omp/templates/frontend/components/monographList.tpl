@@ -12,6 +12,8 @@
  * @uses $titleKey string Optional translation key for a title for the list
  * @uses $heading string HTML heading element, default: h2
  *}
+
+ 
 {if !$heading}
 	{assign var="heading" value="h2"}
 {/if}

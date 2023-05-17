@@ -9,6 +9,8 @@
  *
  * @uses $primaryLocale string The primary locale for this journal/press
  *}
+
+ 
 {include file="frontend/components/header.tpl" pageTitle="user.register"}
 
 <div class="page page_register">

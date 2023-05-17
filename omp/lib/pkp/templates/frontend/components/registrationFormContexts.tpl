@@ -17,6 +17,8 @@
  * @uses $userGroupIds array List group IDs this user is assigned
  *}
 
+
+
 {* Only display the context role selection when registration is taking place
    outside of the context of any one journal/press. *}
 {if !$currentContext}
