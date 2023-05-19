@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 4.1.0, created on 2023-05-13 00:37:58
+/* Smarty version 4.1.0, created on 2023-05-18 00:54:56
   from 'plugins-1-plugins-blocks-browse-blocks-browse:block.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.1.0',
-  'unifunc' => 'content_645ebfc664c688_68247033',
+  'unifunc' => 'content_64655b401754f6_00002415',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_645ebfc664c688_68247033 (Smarty_Internal_Template $_smarty_tpl) {
+function content_64655b401754f6_00002415 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="pkp_block block_browse">
 	<span class="title">
 		<?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['translate'][0], array( array('key'=>"plugins.block.browse"),$_smarty_tpl ) );?>

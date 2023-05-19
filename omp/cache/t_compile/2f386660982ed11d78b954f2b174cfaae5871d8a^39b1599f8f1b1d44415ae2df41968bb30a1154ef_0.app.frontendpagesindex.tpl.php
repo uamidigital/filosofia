@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.1.0, created on 2023-05-08 22:38:30
+/* Smarty version 4.1.0, created on 2023-05-19 18:53:13
   from 'app:frontendpagesindex.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.1.0',
-  'unifunc' => 'content_64595dc6dfafb7_08407486',
+  'unifunc' => 'content_6467a979b80f21_14172720',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '39b1599f8f1b1d44415ae2df41968bb30a1154ef' => 
     array (
       0 => 'app:frontendpagesindex.tpl',
-      1 => 1675470241,
+      1 => 1684515190,
       2 => 'app',
     ),
   ),
@@ -25,12 +25,97 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'app:frontend/components/footer.tpl' => 1,
   ),
 ),false)) {
-function content_64595dc6dfafb7_08407486 (Smarty_Internal_Template $_smarty_tpl) {
-$_smarty_tpl->_checkPlugins(array(0=>array('file'=>'/Applications/XAMPP/xamppfiles/htdocs/filoso/omp/lib/pkp/lib/vendor/smarty/smarty/libs/plugins/modifier.date_format.php','function'=>'smarty_modifier_date_format',),));
+function content_6467a979b80f21_14172720 (Smarty_Internal_Template $_smarty_tpl) {
+$_smarty_tpl->_checkPlugins(array(0=>array('file'=>'C:\\xampp\\htdocs\\filosofia\\omp\\lib\\pkp\\lib\\vendor\\smarty\\smarty\\libs\\plugins\\modifier.date_format.php','function'=>'smarty_modifier_date_format',),));
 $_smarty_tpl->_subTemplateRender("app:frontend/components/header.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>
 
 <div class="page page_homepage">
+
+<div  class="container">
+<div class="row">
+	<div class="col-sm-12">
+		<div class="contenedor2">
+		<div class="cropped">
+			<img src="<?php echo $_smarty_tpl->tpl_vars['baseUrl']->value;?>
+/templates/images/uam/iztgr.png">
+		</div>
+	</div>
+	</div>
+</div>
+<div class="row">
+	<div class="col-sm-12">
+	<div class="contenedor">
+	<div id="carrusel-contenido">
+		<div id="carrusel-caja">
+			<div class="carrusel-elemento">
+				<img class="imagenes" src="<?php echo $_smarty_tpl->tpl_vars['baseUrl']->value;?>
+/templates/images/uam/plantilla.jpg">
+			</div>
+			<div class="carrusel-elemento">   
+				<img class="imagenes" src="<?php echo $_smarty_tpl->tpl_vars['baseUrl']->value;?>
+/templates/images/uam/plantilla.jpg">
+			</div>
+			<div class="carrusel-elemento">   
+				<img class="imagenes" src="<?php echo $_smarty_tpl->tpl_vars['baseUrl']->value;?>
+/templates/images/uam/plantilla.jpg">                        
+			</div>
+		</div>
+	</div>
+</div>
+	</div>
+</div>
+</div>
+<div class="container">
+<div class="row">
+	<div class="col-sm-12">
+	<div class="container3">
+	<div class="lbl-menu">
+		<label for="radio1">Destacado</label>
+		<label for="radio2">Novedades</label>
+		<label for="radio3">Proximos</label>
+		<label for="radio4">Ir al catálogo</label>
+	</div>
+	
+	<div class="content">
+	   
+		<input type="radio" name="radio" id="radio1" checked>
+		<div class="tab1">
+			<h2>Inicio</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis similique, expedita officiis enim iusto alias autem doloribus deleniti. Alias mollitia inventore neque dicta fuga, quos quis, facere at quae, laudantium est asperiores illo nulla nisi iure eum, aperiam facilis in.</p>
+		</div>
+		
+		<input type="radio" name="radio" id="radio2">
+		<div class="tab2">
+			<h2>Servicios</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis similique, expedita officiis enim iusto alias autem doloribus deleniti. Alias mollitia inventore neque dicta fuga, quos quis, facere at quae, laudantium est asperiores illo nulla nisi iure eum, aperiam facilis in.</p>
+		</div>
+		
+		<input type="radio" name="radio" id="radio3">
+		<div class="tab3">
+			<h2>Blog</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis similique, expedita officiis enim iusto alias autem doloribus deleniti. Alias mollitia inventore neque dicta fuga, quos quis, facere at quae, laudantium est asperiores illo nulla nisi iure eum, aperiam facilis in.</p>
+		</div>
+		
+		<input type="radio" name="radio" id="radio4">
+		<div class="tab4">
+			<h2>Contacto</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis similique, expedita officiis enim iusto alias autem doloribus deleniti. Alias mollitia inventore neque dicta fuga, quos quis, facere at quae, laudantium est asperiores illo nulla nisi iure eum, aperiam facilis in.</p>
+		</div>
+	</div>
+</div>
+	</div>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+</div>
 
 		<?php if (!$_smarty_tpl->tpl_vars['activeTheme']->value->getOption('useHomepageImageAsHeader') && $_smarty_tpl->tpl_vars['homepageImage']->value) {?>
 		<img src="<?php echo $_smarty_tpl->tpl_vars['publicFilesDir']->value;?>

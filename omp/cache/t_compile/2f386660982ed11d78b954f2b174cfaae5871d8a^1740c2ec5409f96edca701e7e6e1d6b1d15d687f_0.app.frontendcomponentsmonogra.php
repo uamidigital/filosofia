@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.1.0, created on 2023-05-08 22:38:31
+/* Smarty version 4.1.0, created on 2023-05-18 00:55:28
   from 'app:frontendcomponentsmonogra' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.1.0',
-  'unifunc' => 'content_64595dc70c5923_37391847',
+  'unifunc' => 'content_64655b60789817_03529877',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '1740c2ec5409f96edca701e7e6e1d6b1d15d687f' => 
     array (
       0 => 'app:frontendcomponentsmonogra',
-      1 => 1675470241,
+      1 => 1684260622,
       2 => 'app',
     ),
   ),
@@ -21,7 +21,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'app:frontend/objects/monograph_summary.tpl' => 2,
   ),
 ),false)) {
-function content_64595dc70c5923_37391847 (Smarty_Internal_Template $_smarty_tpl) {
+function content_64655b60789817_03529877 (Smarty_Internal_Template $_smarty_tpl) {
 if (!$_smarty_tpl->tpl_vars['heading']->value) {?>
 	<?php $_smarty_tpl->_assignInScope('heading', "h2");
 }
@@ -36,7 +36,6 @@ if (!$_smarty_tpl->tpl_vars['titleKey']->value) {?>
 }?>
 
 <div class="cmp_monographs_list">
-
 		<?php if ($_smarty_tpl->tpl_vars['titleKey']->value) {?>
 		<<?php echo $_smarty_tpl->tpl_vars['heading']->value;?>
  class="title">

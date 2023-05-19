@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 4.1.0, created on 2023-05-13 00:40:12
+/* Smarty version 4.1.0, created on 2023-05-18 00:54:56
   from 'plugins-1-plugins-blocks-information-blocks-information:block.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.1.0',
-  'unifunc' => 'content_645ec04cbfcfa3_52006364',
+  'unifunc' => 'content_64655b4068a9c0_79656932',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_645ec04cbfcfa3_52006364 (Smarty_Internal_Template $_smarty_tpl) {
+function content_64655b4068a9c0_79656932 (Smarty_Internal_Template $_smarty_tpl) {
 if (!empty($_smarty_tpl->tpl_vars['forReaders']->value) || !empty($_smarty_tpl->tpl_vars['forAuthors']->value) || !empty($_smarty_tpl->tpl_vars['forLibrarians']->value)) {?>
 <div class="pkp_block block_information">
 	<h2 class="title">

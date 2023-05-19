@@ -1,194 +1,177 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
-
-
-
-.pkp_head_wrapper {
-
-    /* aqui van las propiedades del codigo del encabezado*/
-
-}
-
-#map {
-    height: 195px;
-    /*ancho del mapa*/
-    width: 357px;
-}
-
-/*PIE DE PAGINA*/
-
-.pie-pagina {
-    width: 100%;
-    background-color: #181A1A;
-    font-family: 'Montserrat'!important;
-}
-
-/*CREAR 3 COLUMNAS*/
-.pie-pagina .grupo-1 {
-    width: 100%;
-    max-width: 1175px;
-    /*tamaño en el que se expande el bloque de las 3 columnas*/
-    margin: auto;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 50px;
-    padding: 20px 0px;
-    /*margen las letras y el final al ancho del pie de pagina*/
-
-}
-
-/*CAJA DE LA IMAGEN*/
-.pie-pagina .grupo-1 .box figure {
-    width: 100%;
-    height: 100%;
+.contenedor2{
     display: flex;
     justify-content: center;
-    align-items: center;
-    /*TIPO DE LETRA*/
 }
-
-/*TAMAÑO DE IMAGEN*/
-.pie-pagina .grupo-1 .box figure img {
-    width: 250px;
-
+.contenedor{
+    display: flex;
+    justify-content: center;
 }
-
-/*TITULOS*/
-.pie-pagina .grupo-1 .box h2 {
-    font-family: 'Montserrat'!important;
-    /*TIPO DE LETRA*/
-    font-weight: 100;
-    /*ANCHO DE LA LETRA*/
-    color: #fff;
-    margin-bottom: 0;
-    margin-top: -5px;
-    font-size: 25px;
-    line-height: 36px;
-    /*para que no se amontonen las letras cuando dan el salto de pagina por responsive*/
-
+.cropped {
+     width: 150%;
+     height: 30px;
+     overflow: hidden;
+     object-fit: cover;
 }
-
-.pie-pagina .grupo-1 .box p {
-    font-family: 'Montserrat'!important;
-    /*TIPO DE LETRA*/
-    font-weight: 100;
-    /*ANCHO DE LA LETRA*/
-    margin-bottom: 0;
-    margin-top: -5px;
-    font-size: 15px;
-    line-height: 36px;
-    /*para que no se amontonen las letras cuando dan el salto de pagina por responsive*/
-
+ .cropped img {
+     margin: -10px 0px 0px -180px;
 }
-
-.pie-pagina .grupo-1 .box img {
-    /*tamaño de la imagen de bindani*/
-    width: 120px;
-    margin: 5px;
+#carrusel-caja {
+    -moz-animation: automatizacion 15s infinite linear;
+    -o-animation: automatizacion 15s infinite linear;
+    -webkit-animation: automatizacion 15s infinite linear;
+    animation: automatizacion 15s infinite linear;
+    -webkit-transition: all 0.75s ease;
+    -moz-transition: all 0.75s ease;
+    -ms-transition: all 0.75s ease;
+    -o-transition: all 0.75s ease;
+    transition: all 0.75s ease;
+    height: 300px;
+    width: 300%;
 }
-
-
-/*PARRAGOS DE TEXTO*/
-.pie-pagina .grupo-1 .box h3 {
-    color: #57A519;
-    margin-bottom: 10px;
-    font-size: 18px;
-    margin-top: 35px;
-    /*margen entre las letras verdes de la segunda caja*/
-    text-align: justify;
-    font-weight: 250px;
-    /*ancho de las letras veerdes (revistas signos, bindani, uam iztapalapa)*/
-
-}
-
-/*PARRAGOS DE TEXTO*/
-.pie-pagina .grupo-1 .box p {
-    color: #b9b2b2;
-    margin-bottom: 20px;
-    /*margen entre el la dirección y el mapa*/
-}
-
-/*REDES SOCIALES*/
-.pie-pagina .grupo-1 .red-social a {
-    display: inline-block;
-    text-decoration: none;
-    width: 60px;
-    /*ancho de circulo*/
-    height: 60px;
-    /*largo de circulo*/
-    border-radius: 50px;
-    /*hace que las cajas de las redes sociales sean circulaes*/
-    line-height: 62px;
-    color: black;
-    /*color de los iconos*/
-    margin-right: 16px;
-    /*margen entre iconos*/
-    background-color: #57A519;
-    /*color de fondo de los iconos*/
+#carrusel-contenido {
+    margin: 0 auto;
+    overflow: hidden;
     text-align: center;
-    transition: all 300ms ease;
-    font-size: 40px;
-    /*tamaño de los iconos*/
-    margin-top: 20px;
-
 }
-
-/*HACER AZUL LOS ICONOS CUANDO SE PASA EL CURSOR*/
-.pie-pagina .grupo-1 .red-social a:hover {
-    color: white;
-}
-
-/*IMAGEN DE LOGOTIPO VERDE CINTA UAM*/
-.pie-pagina .grupo-2 {
-    background-color: white;
-    padding: 0px;
-    text-align: center;
-    color: #fff;
-    width: 100%;
-    
-}
-
-
-.gp2{ /*clase para que la imagen de la cinta verde este en toda la oantalla*/
+.imagenes{
+    height: 300px;
     width: 100%;
 }
-
-
-/*IMAGEN DE LOGOTIPO DE UAM IZTAPALAPA*/
-.pie-pagina .grupo-3 {
-    background-color: #fff;
-    padding: 15px 10px;
-    text-align: center;
-    color: #fff;
-    width: 100px;
-    /*height: 4em;*/
+.carrusel-elemento {
+    float: left;
+    width: 33.333%;
 }
-
-
-.grupo-3 img { /*tamaño de la imagen logo iztapalapa de hasta abajo*/
-    /*tamaño de la imagen de bindani*/
-    width: 500px;
-    display: block;
+.container3{
+    width: 100%;
+    max-width: 700px;
     margin: auto;
-    margin-top: 30px;
+    margin-top: 50px;
+}
+.lbl-menu{
+    background: #57A519;
+}
+.lbl-menu label{
+    display: inline-block;
+    padding: 20px;
+    color: #fff;
+    cursor: pointer;
+    transition: all 400ms ease;
+}
+.lbl-menu label:hover{
+    background: #234;
+}
+.content{
+    position: relative;
+}
+.content div{
+    position: absolute;
+    line-height: 1.8;
+    transition: all 600ms ease;
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(0.90);
+    padding: 30px;
+    background: #fff;
+    padding-bottom: 40px;
+}
+#radio1,#radio2,#radio3,#radio4{
+    display: none;
+}
+#radio1:checked ~ .tab1,
+#radio2:checked ~ .tab2,
+#radio3:checked ~ .tab3,
+#radio4:checked ~ .tab4
+{
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1);
+}
+.content div:after{
+    position: absolute;
+    content: "";
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid #fff;
+    bottom: 100%;
+    left: 28px;
+}
+.content .tab2:after{
+    left: 122px;
+}
+.content .tab3:after{
+    left: 210px;
+}
+.content .tab4:after{
+    left: 303px;
 }
 
-
-.pie-pagina .grupo-2 small {
-    font-size: 15px;
+@-moz-keyframes automatizacion {
+    0% {
+        margin-left: 0;
+    }
+    30% {
+        margin-left: 0;
+    }
+    35% {
+        margin-left: -100%;
+    }
+    65% {
+        margin-left: -100%;
+    }
+    70% {
+        margin-left: -200%;
+    }
+    95% {
+        margin-left: -200%;
+    }
+    100% {
+        margin-left: 0;
+    }
 }
-
-.tamañogoogle{ /*clase para que la imagen google quede diferente al tamaño de bindani*/
-   width: 0px;
-   height: 30px;
+@-webkit-keyframes automatizacion {
+    0% {
+        margin-left: 0;
+    }
+    30% {
+        margin-left: 0;
+    }
+    35% {
+        margin-left: -100%;
+    }
+    65% {
+        margin-left: -100%;
+    }
+    70% {
+        margin-left: -200%;
+    }
+    95% {
+        margin-left: -200%;
+    }
+    100% {
+        margin-left: 0;
+    }
 }
-
-/*PANTALLA*/
-@media screen and (max-width:800px) {
-    .pie-pagina .grupo-1 {
-        width: 90%;
-        grid-template-columns: repeat(1, 1fr);
-        grid-gap: 30px;
-        padding: 35px 0px;
-
+@keyframes automatizacion {
+    0% {
+        margin-left: 0;
+    }
+    30% {
+        margin-left: 0;
+    }
+    35% {
+        margin-left: -100%;
+    }
+    65% {
+        margin-left: -100%;
+    }
+    70% {
+        margin-left: -200%;
+    }
+    95% {
+        margin-left: -200%;
+    }
+    100% {
+        margin-left: 0;
     }
 }

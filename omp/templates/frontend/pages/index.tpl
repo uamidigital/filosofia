@@ -24,75 +24,82 @@
 <div  class="container">
 <div class="row">
 	<div class="col-sm-12">
-		<div class="navbar" style="background-image: url({$baseUrl}/templates/images/uam/iztgr.png);position: absolute;bottom: 10;width: 97.4%;height: 10%;"></div>
+		<div class="contenedor2">
+		<div class="cropped">
+			<img src="{$baseUrl}/templates/images/uam/iztgr.png">
+		</div>
+	</div>
 	</div>
 </div>
 <div class="row">
 	<div class="col-sm-12">
-		<div id="myCarousel" class="carousel slide" data-ride="carousel">
-			<!-- Indicators -->
-			<ol class="carousel-indicators">
-			<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-			<li data-target="#myCarousel" data-slide-to="1"></li>
-			<li data-target="#myCarousel" data-slide-to="2"></li>
-			</ol>
-		
-			<!-- Wrapper for slides -->
-			<div class="carousel-inner">
-				<div class="item active">
-					<img src="{$baseUrl}/templates/images/uam/plantilla.jpg" alt="Los Angeles">
-				</div>
-		
-				<div class="item">
-					<img src="{$baseUrl}/templates/images/uam/plantilla.jpg" alt="Los Angeles">
-				</div>
-		
-				<div class="item">
-					<img src="{$baseUrl}/templates/images/uam/plantilla.jpg" alt="Los Angeles">
-				</div>
+	<div class="contenedor">
+	<div id="carrusel-contenido">
+		<div id="carrusel-caja">
+			<div class="carrusel-elemento">
+				<img class="imagenes" src="{$baseUrl}/templates/images/uam/plantilla.jpg">
 			</div>
-		
-			<!-- Left and right controls -->
-			<a class="left carousel-control" href="#myCarousel" data-slide="prev">
-			<span class="glyphicon glyphicon-chevron-left"></span>
-			<span class="sr-only">Previous</span>
-			</a>
-			<a class="right carousel-control" href="#myCarousel" data-slide="next">
-			<span class="glyphicon glyphicon-chevron-right"></span>
-			<span class="sr-only">Next</span>
-			</a>
+			<div class="carrusel-elemento">   
+				<img class="imagenes" src="{$baseUrl}/templates/images/uam/plantilla.jpg">
+			</div>
+			<div class="carrusel-elemento">   
+				<img class="imagenes" src="{$baseUrl}/templates/images/uam/plantilla.jpg">                        
+			</div>
 		</div>
+	</div>
+</div>
 	</div>
 </div>
 </div>
 <div class="container">
 <div class="row">
-	<div class="col-sm-12" align="center">
+	<div class="col-sm-12">
+	<div class="container3">
+	<div class="lbl-menu">
+		<label for="radio1">Destacado</label>
+		<label for="radio2">Novedades</label>
+		<label for="radio3">Proximos</label>
+		<label for="radio4">Ir al catálogo</label>
+	</div>
+	
+	<div class="content">
+	   
+		<input type="radio" name="radio" id="radio1" checked>
+		<div class="tab1">
+			<h2>Inicio</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis similique, expedita officiis enim iusto alias autem doloribus deleniti. Alias mollitia inventore neque dicta fuga, quos quis, facere at quae, laudantium est asperiores illo nulla nisi iure eum, aperiam facilis in.</p>
+		</div>
 		
-			<ul class="nav nav-tabs"align="center">
-				<li class="active"><a data-toggle="tab" href="#home">Novedades</a></li>
-				<li><a data-toggle="tab" href="#menu1">Destacado</a></li>
-				<li><a data-toggle="tab" href="#menu2">Proximos</a></li>
-				<li><a data-toggle="tab" href="#">Ir a catálogo</a></li>
-			</ul>
+		<input type="radio" name="radio" id="radio2">
+		<div class="tab2">
+			<h2>Servicios</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis similique, expedita officiis enim iusto alias autem doloribus deleniti. Alias mollitia inventore neque dicta fuga, quos quis, facere at quae, laudantium est asperiores illo nulla nisi iure eum, aperiam facilis in.</p>
+		</div>
 		
-		<div class="tab-content">
-			<div id="home" class="tab-pane fade in active">
-				<h3>HOME</h3>
-				<p>Some content.</p>
-			</div>
-			<div id="menu1" class="tab-pane fade">
-				<h3>Menu 1</h3>
-				<p>Some content in menu 1.</p>
-			</div>
-			<div id="menu2" class="tab-pane fade">
-				<h3>Menu 2</h3>
-				<p>Some content in menu 2.</p>
-			</div>
-			
+		<input type="radio" name="radio" id="radio3">
+		<div class="tab3">
+			<h2>Blog</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis similique, expedita officiis enim iusto alias autem doloribus deleniti. Alias mollitia inventore neque dicta fuga, quos quis, facere at quae, laudantium est asperiores illo nulla nisi iure eum, aperiam facilis in.</p>
+		</div>
+		
+		<input type="radio" name="radio" id="radio4">
+		<div class="tab4">
+			<h2>Contacto</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis similique, expedita officiis enim iusto alias autem doloribus deleniti. Alias mollitia inventore neque dicta fuga, quos quis, facere at quae, laudantium est asperiores illo nulla nisi iure eum, aperiam facilis in.</p>
 		</div>
 	</div>
 </div>
+	</div>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 </div>
 
 	{* Homepage Image *}
