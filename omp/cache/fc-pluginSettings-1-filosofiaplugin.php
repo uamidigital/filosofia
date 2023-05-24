@@ -1,5 +1,5 @@
 <?php return array (
-  'baseColour' => '#FFFE47',
+  'baseColour' => '#F0E9B4',
   'enabled' => true,
   'typography' => 'Verdana',
   'useHomepageImageAsHeader' => 'false',

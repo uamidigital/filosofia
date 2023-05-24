@@ -72,14 +72,14 @@
 		
 		<input type="radio" name="radio" id="radio2">
 		<div class="tab2">
+		{include file="frontend/components/spotlights.tpl"}
 			<h2>Servicios</h2>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis similique, expedita officiis enim iusto alias autem doloribus deleniti. Alias mollitia inventore neque dicta fuga, quos quis, facere at quae, laudantium est asperiores illo nulla nisi iure eum, aperiam facilis in.</p>
 		</div>
 		
 		<input type="radio" name="radio" id="radio3">
 		<div class="tab3">
-			<h2>Blog</h2>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis similique, expedita officiis enim iusto alias autem doloribus deleniti. Alias mollitia inventore neque dicta fuga, quos quis, facere at quae, laudantium est asperiores illo nulla nisi iure eum, aperiam facilis in.</p>
+		{$additionalHomeContent}
 		</div>
 		
 		<input type="radio" name="radio" id="radio4">

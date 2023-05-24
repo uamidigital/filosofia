@@ -1,32 +1,32 @@
 <?php
-/* Smarty version 4.1.0, created on 2023-05-19 18:53:13
+/* Smarty version 4.1.0, created on 2023-05-25 00:19:22
   from 'app:frontendpagesindex.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.1.0',
-  'unifunc' => 'content_6467a979b80f21_14172720',
+  'unifunc' => 'content_646e8d6a0987a7_97724601',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '39b1599f8f1b1d44415ae2df41968bb30a1154ef' => 
     array (
       0 => 'app:frontendpagesindex.tpl',
-      1 => 1684515190,
+      1 => 1684966761,
       2 => 'app',
     ),
   ),
   'includes' => 
   array (
     'app:frontend/components/header.tpl' => 1,
-    'app:frontend/components/spotlights.tpl' => 1,
+    'app:frontend/components/spotlights.tpl' => 2,
     'app:frontend/components/monographList.tpl' => 2,
     'app:frontend/objects/announcement_summary.tpl' => 1,
     'app:frontend/components/footer.tpl' => 1,
   ),
 ),false)) {
-function content_6467a979b80f21_14172720 (Smarty_Internal_Template $_smarty_tpl) {
-$_smarty_tpl->_checkPlugins(array(0=>array('file'=>'C:\\xampp\\htdocs\\filosofia\\omp\\lib\\pkp\\lib\\vendor\\smarty\\smarty\\libs\\plugins\\modifier.date_format.php','function'=>'smarty_modifier_date_format',),));
+function content_646e8d6a0987a7_97724601 (Smarty_Internal_Template $_smarty_tpl) {
+$_smarty_tpl->_checkPlugins(array(0=>array('file'=>'/opt/lampp/htdocs/filosofia/omp/lib/pkp/lib/vendor/smarty/smarty/libs/plugins/modifier.date_format.php','function'=>'smarty_modifier_date_format',),));
 $_smarty_tpl->_subTemplateRender("app:frontend/components/header.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>
 
@@ -87,14 +87,16 @@ $_smarty_tpl->_subTemplateRender("app:frontend/components/header.tpl", $_smarty_
 		
 		<input type="radio" name="radio" id="radio2">
 		<div class="tab2">
+		<?php $_smarty_tpl->_subTemplateRender("app:frontend/components/spotlights.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
+?>
 			<h2>Servicios</h2>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis similique, expedita officiis enim iusto alias autem doloribus deleniti. Alias mollitia inventore neque dicta fuga, quos quis, facere at quae, laudantium est asperiores illo nulla nisi iure eum, aperiam facilis in.</p>
 		</div>
 		
 		<input type="radio" name="radio" id="radio3">
 		<div class="tab3">
-			<h2>Blog</h2>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis similique, expedita officiis enim iusto alias autem doloribus deleniti. Alias mollitia inventore neque dicta fuga, quos quis, facere at quae, laudantium est asperiores illo nulla nisi iure eum, aperiam facilis in.</p>
+		<?php echo $_smarty_tpl->tpl_vars['additionalHomeContent']->value;?>
+
 		</div>
 		
 		<input type="radio" name="radio" id="radio4">
@@ -129,7 +131,7 @@ $_smarty_tpl->_subTemplateRender("app:frontend/components/header.tpl", $_smarty_
 			<?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['translate'][0], array( array('key'=>"spotlight.spotlights"),$_smarty_tpl ) );?>
 
 		</h2>
-		<?php $_smarty_tpl->_subTemplateRender("app:frontend/components/spotlights.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
+		<?php $_smarty_tpl->_subTemplateRender("app:frontend/components/spotlights.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, true);
 ?>
 	<?php }?>
 

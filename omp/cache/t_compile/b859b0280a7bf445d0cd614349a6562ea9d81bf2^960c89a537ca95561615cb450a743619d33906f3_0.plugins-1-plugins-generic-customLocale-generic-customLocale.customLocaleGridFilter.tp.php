@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.1.0, created on 2023-05-19 18:25:02
+/* Smarty version 4.1.0, created on 2023-05-25 00:14:06
   from 'plugins-1-plugins-generic-customLocale-generic-customLocale:customLocaleGridFilter.tp' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.1.0',
-  'unifunc' => 'content_6467a2decdbdf6_16403702',
+  'unifunc' => 'content_646e8c2e201b99_25250808',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '960c89a537ca95561615cb450a743619d33906f3' => 
     array (
       0 => 'plugins-1-plugins-generic-customLocale-generic-customLocale:customLocaleGridFilter.tp',
-      1 => 1683930611,
+      1 => 1684945243,
       2 => 'plugins-1-plugins-generic-customLocale-generic-customLocale',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_6467a2decdbdf6_16403702 (Smarty_Internal_Template $_smarty_tpl) {
+function content_646e8c2e201b99_25250808 (Smarty_Internal_Template $_smarty_tpl) {
 echo '<script'; ?>
  type="text/javascript">
 	// Attach the form handler to the form.

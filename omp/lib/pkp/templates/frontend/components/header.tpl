@@ -47,6 +47,7 @@
 						</h1>
 					{/if}
 					<div class="pkp_site_name">
+					<img src="{$baseUrl}/templates/images/uam/logouam-i.png" alt="{$applicationName|escape}" title="{$applicationName|escape}" style="width: 38%;filter: invert(100%);" /><br>
 					{capture assign="homeUrl"}
 						{url page="index" router=$smarty.const.ROUTE_PAGE}
 					{/capture}
