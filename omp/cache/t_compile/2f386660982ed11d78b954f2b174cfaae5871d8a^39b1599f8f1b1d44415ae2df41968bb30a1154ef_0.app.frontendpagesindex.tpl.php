@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.1.0, created on 2023-05-25 00:19:22
+/* Smarty version 4.1.0, created on 2023-05-26 21:35:22
   from 'app:frontendpagesindex.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.1.0',
-  'unifunc' => 'content_646e8d6a0987a7_97724601',
+  'unifunc' => 'content_647109fa2f2759_35986631',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '39b1599f8f1b1d44415ae2df41968bb30a1154ef' => 
     array (
       0 => 'app:frontendpagesindex.tpl',
-      1 => 1684966761,
+      1 => 1685129720,
       2 => 'app',
     ),
   ),
@@ -25,7 +25,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'app:frontend/components/footer.tpl' => 1,
   ),
 ),false)) {
-function content_646e8d6a0987a7_97724601 (Smarty_Internal_Template $_smarty_tpl) {
+function content_647109fa2f2759_35986631 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_checkPlugins(array(0=>array('file'=>'/opt/lampp/htdocs/filosofia/omp/lib/pkp/lib/vendor/smarty/smarty/libs/plugins/modifier.date_format.php','function'=>'smarty_modifier_date_format',),));
 $_smarty_tpl->_subTemplateRender("app:frontend/components/header.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>
@@ -35,12 +35,18 @@ $_smarty_tpl->_subTemplateRender("app:frontend/components/header.tpl", $_smarty_
 <div  class="container">
 <div class="row">
 	<div class="col-sm-12">
+		<br>
+		<br>
 		<div class="contenedor2">
-		<div class="cropped">
 			<img src="<?php echo $_smarty_tpl->tpl_vars['baseUrl']->value;?>
+/templates/images/uam/filo.png" alt="Imagen" class="corner-image"> 
+			<div class="cropped">
+				<img src="<?php echo $_smarty_tpl->tpl_vars['baseUrl']->value;?>
 /templates/images/uam/iztgr.png">
+			</div>
 		</div>
-	</div>
+		<br>
+		<br>
 	</div>
 </div>
 <div class="row">
@@ -101,13 +107,119 @@ $_smarty_tpl->_subTemplateRender("app:frontend/components/header.tpl", $_smarty_
 		
 		<input type="radio" name="radio" id="radio4">
 		<div class="tab4">
-			<h2>Contacto</h2>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis similique, expedita officiis enim iusto alias autem doloribus deleniti. Alias mollitia inventore neque dicta fuga, quos quis, facere at quae, laudantium est asperiores illo nulla nisi iure eum, aperiam facilis in.</p>
+			<h2>Red de autores</h2>
+			<svg id="chart"></svg>
 		</div>
 	</div>
+	<?php echo '<script'; ?>
+>
+    // Datos de ejemplo (nodos y enlaces)
+    var nodes = [
+      { id: 1, name: "Nodo 1" },
+      { id: 2, name: "Nodo 2" },
+      { id: 3, name: "Nodo 3" },
+      { id: 4, name: "Nodo 4" },
+      { id: 5, name: "Nodo 5" },
+      { id: 6, name: "Nodo 6" },
+      { id: 7, name: "Nodo 7" },
+      { id: 8, name: "Nodo 8" },
+      { id: 9, name: "Nodo 9" },
+      { id: 10, name: "Nodo 10" },
+      { id: 11, name: "Nodo 11" },
+      { id: 12, name: "Nodo 12" },
+    ];
+
+    var links = [
+      { source: 1, target: 9 },
+      { source: 2, target: 8 },
+      { source: 3, target: 4 },
+      { source: 3, target: 5 },
+      { source: 3, target: 2 },
+      { source: 3, target: 9 },
+      { source: 4, target: 8 },
+      { source: 5, target: 6 },
+      { source: 6, target: 7 },
+      { source: 7, target: 1 },
+      { source: 8, target: 9 },
+      { source: 9, target: 11 },
+      { source: 10, target: 12 },
+      { source: 12, target: 1 },
+    ];
+
+    // Crear la selección SVG y establecer el tamaño del gráfico
+    var svg = d3.select("#chart")
+                .attr("width", 670)
+                .attr("height", 200);
+
+    // Crear la simulación de fuerza dirigida
+    var simulation = d3.forceSimulation(nodes)
+                       .force("link", d3.forceLink(links).id(function(d) { return d.id; }))
+                       .force("charge", d3.forceManyBody())
+                       .force("center", d3.forceCenter(350, 100))
+                       .on("tick", ticked);
+
+    // Crear los enlaces
+    var link = svg.selectAll(".link")
+                  .data(links)
+                  .enter()
+                  .append("line")
+                  .attr("class", "link");
+
+    // Crear los nodos
+    var node = svg.selectAll(".node")
+                  .data(nodes)
+                  .enter()
+                  .append("circle")
+                  .attr("class", "node")
+                  .attr("r", 10)
+                  .call(drag(simulation));
+
+    // Función para actualizar la posición de los elementos en cada tick de la simulación
+    function ticked() {
+      link.attr("x1", function(d) { return d.source.x; })
+          .attr("y1", function(d) { return d.source.y; })
+          .attr("x2", function(d) { return d.target.x; })
+          .attr("y2", function(d) { return d.target.y; });
+
+      node.attr("cx", function(d) { return d.x; })
+          .attr("cy", function(d) { return d.y; });
+    }
+
+    // Función para permitir arrastrar los nodos
+    function drag(simulation) {
+      function dragstarted(event, d) {
+        if (!event.active) simulation.alphaTarget(0.3).restart();
+        d.fx = d.x;
+        d.fy = d.y;
+      }
+
+      function dragged(event, d) {
+        d.fx = event.x;
+        d.fy = event.y;
+      }
+
+      function dragended(event, d) {
+        if (!event.active) simulation.alphaTarget(0);
+        d.fx = null;
+        d.fy = null;
+      }
+
+      return d3.drag()
+               .on("start", dragstarted)
+               .on("drag", dragged)
+               .on("end", dragended);
+    }
+  <?php echo '</script'; ?>
+>
 </div>
 	</div>
 </div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 <br>
 <br>
 <br>
@@ -198,6 +310,7 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
 	<?php }?>
 
 </div>
+<div id="autores"></div>
 <?php $_smarty_tpl->_subTemplateRender("app:frontend/components/footer.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 }
 }

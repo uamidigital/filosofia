@@ -18,6 +18,8 @@
 		{/if}
 	</title>
 
+
 	{load_header context="frontend"}
 	{load_stylesheet context="frontend"}
+
 </head>

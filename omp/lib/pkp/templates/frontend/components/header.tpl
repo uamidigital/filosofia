@@ -20,6 +20,18 @@
 {/strip}
 <!DOCTYPE html>
 <html lang="{$currentLocale|replace:"_":"-"}" xml:lang="{$currentLocale|replace:"_":"-"}">
+<script src="https://d3js.org/d3.v7.min.js"></script>
+<style>
+    .node {
+      fill: #ff0000;
+      stroke: #000000;
+    }
+
+    .link {
+      stroke: #999999;
+      stroke-width: 1px;
+    }
+  </style>
 {if !$pageTitleTranslated}{capture assign="pageTitleTranslated"}{translate key=$pageTitle}{/capture}{/if}
 {include file="frontend/components/headerHead.tpl"}
 <body class="pkp_page_{$requestedPage|escape|default:"index"} pkp_op_{$requestedOp|escape|default:"index"}{if $showingLogo} has_site_logo{/if}" dir="{$currentLocaleLangDir|escape|default:"ltr"}">
