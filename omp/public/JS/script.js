@@ -35,7 +35,7 @@ var svg = d3.select("#graph-container")
 
 // Crear la simulación de fuerza
 var simulation = d3.forceSimulation(data.nodes)
-.force("charge", d3.forceManyBody())
+.force("charge", d3.forceManyBody().strength(-5))
 .force("center", d3.forceCenter(200, 120))
 .force("link", d3.forceLink(data.links).id(function(d) { return d.id; }))
 .on("tick", ticked);
