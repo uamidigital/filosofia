@@ -1,6 +1,8 @@
 - Custom Locale Plugin
-- Version: 1.1.0
+- Version: (see version.xml)
 - Author: Carola Fanselow (updates by Alec Smecher, Erik Hanson)
+
+[![Build Status](https://travis-ci.org/pkp/customLocale.svg?branch=stable-3_3_0)](https://travis-ci.org/pkp/customLocale)
 
 About
 -----
@@ -28,7 +30,7 @@ https://github.com/pkp/pkp-lib/issues/5169
 
 System Requirements
 -------------------
-This plugin is compatible with OJS 3.2 and OMP 3.2.
+This plugin is compatible with OJS 3.3 and OMP 3.3.
 
 Installation
 ------------

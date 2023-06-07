@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.1.0, created on 2023-06-02 00:50:26
+/* Smarty version 4.1.0, created on 2023-06-07 23:58:41
   from 'app:frontendcomponentsheader.' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.1.0',
-  'unifunc' => 'content_647920b24ad113_49958931',
+  'unifunc' => 'content_6480fd91829d28_80356050',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '10ae5578a0959129b8d4ceeb9f99c1bb2a9cbd65' => 
     array (
       0 => 'app:frontendcomponentsheader.',
-      1 => 1685659817,
+      1 => 1686175115,
       2 => 'app',
     ),
   ),
@@ -22,7 +22,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'app:frontend/components/skipLinks.tpl' => 1,
   ),
 ),false)) {
-function content_647920b24ad113_49958931 (Smarty_Internal_Template $_smarty_tpl) {
+function content_6480fd91829d28_80356050 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_checkPlugins(array(0=>array('file'=>'/opt/lampp/htdocs/filosofia/omp/lib/pkp/lib/vendor/smarty/smarty/libs/plugins/modifier.replace.php','function'=>'smarty_modifier_replace',),));
 $_smarty_tpl->_assignInScope('showingLogo', true);
 if (!$_smarty_tpl->tpl_vars['displayPageHeaderLogo']->value) {
@@ -35,39 +35,7 @@ $_smarty_tpl->_assignInScope('showingLogo', false);
 <?php echo '<script'; ?>
  src="https://d3js.org/d3.v7.min.js"><?php echo '</script'; ?>
 >
-<style>
 
-.node {
-      fill: #ff0000;
-      stroke: #000000;
-      stroke-width: 1px;
-      cursor: pointer;
-    }
-    
-    .node-popover {
-      position: absolute;
-      width: 100px;
-      padding: 5px;
-      background-color: #ffffff;
-      border: 1px solid black;
-      border-radius: 2px;
-      text-align: center;
-      visibility: hidden;
-      opacity: 0;
-      transition: visibility 0s, opacity 0.3s ease-out;
-    }
-    
-    .node:hover .node-popover {
-      visibility: visible;
-      opacity: 1;
-    }
-    
-    .node-text {
-      font-size: 9px;
-      text-anchor: middle;
-    }                               
-
-  </style>
 <?php if (!$_smarty_tpl->tpl_vars['pageTitleTranslated']->value) {
 $_smarty_tpl->smarty->ext->_capture->open($_smarty_tpl, 'default', "pageTitleTranslated", null);
 echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['translate'][0], array( array('key'=>$_smarty_tpl->tpl_vars['pageTitle']->value),$_smarty_tpl ) );

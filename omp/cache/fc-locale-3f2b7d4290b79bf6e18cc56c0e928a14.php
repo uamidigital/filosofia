@@ -1,6 +1,6 @@
 <?php return array (
   'plugins.generic.customLocale.name' => 'Módulo de configuración regional personalizada',
-  'plugins.generic.customLocale.description' => 'Este módulo permite la personalización del texto predeterminado de la interfaz de usuario/a utilizado por OMP.',
+  'plugins.generic.customLocale.description' => 'Este módulo permite la personalización del texto predeterminado de la interfaz de usuario/a utilizado por OJS y OMP.',
   'plugins.generic.customLocale.search.fileName' => 'Buscar en los nombres de archivo',
   'plugins.generic.customLocale.search.key' => 'Buscar por llave',
   'plugins.generic.customLocale.saveAndContinue' => 'Guardar y continuar',
@@ -19,7 +19,7 @@
   'plugins.generic.customLocale.files.pageTitle' => 'Nombre de archivo',
   'plugins.generic.customLocale.customLocaleFiles' => 'Archivos de configuración regionales',
   'plugins.generic.customLocale.searchDescription' => 'Introduzca aquí una clave de configuración regional completa. Las claves encontradas están resaltadas.',
-  'plugins.generic.customLocale.fileDescription' => 'Introduzca el texto en el campo de texto personalizado correspondiente. Deje en blanco el campo de texto personalizado si quiere usar el texto predeterminado de OMP.',
-  'plugins.generic.customLocale.searchResultsCount' => 'Mostrando {{ currentLocaleKeys.length }} de {{ filteredKeysList.length }} resultados para "{{ phraseSearched }}."',
+  'plugins.generic.customLocale.fileDescription' => 'Introduzca el texto en el campo de texto personalizado correspondiente. Deje en blanco el campo de texto personalizado si quiere usar el texto predeterminado de OJS/OMP.',
+  'plugins.generic.customLocale.searchResultsCount' => 'Mostrando {{ currentLocaleKeys.length }} de {{ filteredKeysList.length }} resultados para "{{ phraseSearched }}".',
   'plugins.generic.customLocale.file.editHeader' => 'Personalizar las claves de configuración regional',
 );

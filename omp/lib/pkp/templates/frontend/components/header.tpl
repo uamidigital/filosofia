@@ -21,39 +21,7 @@
 <!DOCTYPE html>
 <html lang="{$currentLocale|replace:"_":"-"}" xml:lang="{$currentLocale|replace:"_":"-"}">
 <script src="https://d3js.org/d3.v7.min.js"></script>
-<style>
 
-.node {
-      fill: #ff0000;
-      stroke: #000000;
-      stroke-width: 1px;
-      cursor: pointer;
-    }
-    
-    .node-popover {
-      position: absolute;
-      width: 100px;
-      padding: 5px;
-      background-color: #ffffff;
-      border: 1px solid black;
-      border-radius: 2px;
-      text-align: center;
-      visibility: hidden;
-      opacity: 0;
-      transition: visibility 0s, opacity 0.3s ease-out;
-    }
-    
-    .node:hover .node-popover {
-      visibility: visible;
-      opacity: 1;
-    }
-    
-    .node-text {
-      font-size: 9px;
-      text-anchor: middle;
-    }                               
-
-  </style>
 {if !$pageTitleTranslated}{capture assign="pageTitleTranslated"}{translate key=$pageTitle}{/capture}{/if}
 {include file="frontend/components/headerHead.tpl"}
 <body class="pkp_page_{$requestedPage|escape|default:"index"} pkp_op_{$requestedOp|escape|default:"index"}{if $showingLogo} has_site_logo{/if}" dir="{$currentLocaleLangDir|escape|default:"ltr"}">

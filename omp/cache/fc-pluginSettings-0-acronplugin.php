@@ -39,18 +39,6 @@
     ),
     3 => 
     array (
-      'className' => 'plugins.generic.usageStats.UsageStatsLoader',
-      'frequency' => 
-      array (
-        'hour' => 24,
-      ),
-      'args' => 
-      array (
-        0 => 'autoStage',
-      ),
-    ),
-    4 => 
-    array (
       'className' => 'lib.pkp.classes.task.ReviewReminder',
       'frequency' => 
       array (
@@ -60,7 +48,7 @@
       array (
       ),
     ),
-    5 => 
+    4 => 
     array (
       'className' => 'lib.pkp.classes.task.PublishSubmissions',
       'frequency' => 
@@ -71,7 +59,7 @@
       array (
       ),
     ),
-    6 => 
+    5 => 
     array (
       'className' => 'lib.pkp.classes.task.StatisticsReport',
       'frequency' => 
