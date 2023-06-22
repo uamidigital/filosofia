@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.1.0, created on 2023-05-24 23:24:18
+/* Smarty version 4.1.0, created on 2023-06-19 22:42:33
   from 'app:frontendcomponentsmonogra' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.1.0',
-  'unifunc' => 'content_646e8082bd9067_17543164',
+  'unifunc' => 'content_6490bdb9333c31_47808392',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '1740c2ec5409f96edca701e7e6e1d6b1d15d687f' => 
     array (
       0 => 'app:frontendcomponentsmonogra',
-      1 => 1684963436,
+      1 => 1687207331,
       2 => 'app',
     ),
   ),
@@ -21,7 +21,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'app:frontend/objects/monograph_summary.tpl' => 2,
   ),
 ),false)) {
-function content_646e8082bd9067_17543164 (Smarty_Internal_Template $_smarty_tpl) {
+function content_6490bdb9333c31_47808392 (Smarty_Internal_Template $_smarty_tpl) {
 if (!$_smarty_tpl->tpl_vars['heading']->value) {?>
 	<?php $_smarty_tpl->_assignInScope('heading', "h2");
 }

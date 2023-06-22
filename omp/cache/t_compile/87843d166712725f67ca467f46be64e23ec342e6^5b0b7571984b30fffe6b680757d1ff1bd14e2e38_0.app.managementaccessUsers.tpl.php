@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.1.0, created on 2023-06-07 21:56:06
+/* Smarty version 4.1.0, created on 2023-06-22 01:04:19
   from 'app:managementaccessUsers.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.1.0',
-  'unifunc' => 'content_6480e0d6ce9ae6_43393163',
+  'unifunc' => 'content_649381f32a5203_19510549',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '5b0b7571984b30fffe6b680757d1ff1bd14e2e38' => 
     array (
       0 => 'app:managementaccessUsers.tpl',
-      1 => 1684945243,
+      1 => 1687207329,
       2 => 'app',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_6480e0d6ce9ae6_43393163 (Smarty_Internal_Template $_smarty_tpl) {
+function content_649381f32a5203_19510549 (Smarty_Internal_Template $_smarty_tpl) {
 echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['help'][0], array( array('file'=>"users-and-roles",'class'=>"pkp_help_tab"),$_smarty_tpl ) );?>
 
 

@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.1.0, created on 2023-05-25 00:14:05
+/* Smarty version 4.1.0, created on 2023-06-21 00:31:49
   from 'app:controllersgridgridCellCo' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.1.0',
-  'unifunc' => 'content_646e8c2ddf16f4_73264267',
+  'unifunc' => 'content_649228d536ea45_38897102',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '13079afb8321a2a0363ebe7d6bab5378471300e1' => 
     array (
       0 => 'app:controllersgridgridCellCo',
-      1 => 1684945243,
+      1 => 1687207329,
       2 => 'app',
     ),
   ),
@@ -21,7 +21,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'app:linkAction/linkAction.tpl' => 1,
   ),
 ),false)) {
-function content_646e8c2ddf16f4_73264267 (Smarty_Internal_Template $_smarty_tpl) {
+function content_649228d536ea45_38897102 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_checkPlugins(array(0=>array('file'=>'/opt/lampp/htdocs/filosofia/omp/lib/pkp/lib/vendor/smarty/smarty/libs/plugins/modifier.truncate.php','function'=>'smarty_modifier_truncate',),));
 ?>
 

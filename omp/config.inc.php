@@ -257,7 +257,7 @@ encryption = sha1
 salt = "YouMustSetASecretKeyHere!!"
 
 ; The unique secret used for encoding and decoding API keys
-api_key_secret = ""
+api_key_secret = "sistemaweb"
 
 ; The number of seconds before a password reset hash expires (defaults to
 ; 7200 seconds (2 hours)

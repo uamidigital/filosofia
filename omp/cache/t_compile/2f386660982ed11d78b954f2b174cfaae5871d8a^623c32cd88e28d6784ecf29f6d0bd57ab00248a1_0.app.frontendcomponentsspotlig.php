@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.1.0, created on 2023-05-24 23:38:44
+/* Smarty version 4.1.0, created on 2023-06-19 22:42:33
   from 'app:frontendcomponentsspotlig' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.1.0',
-  'unifunc' => 'content_646e83e4d12b82_53001626',
+  'unifunc' => 'content_6490bdb9328436_93657185',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '623c32cd88e28d6784ecf29f6d0bd57ab00248a1' => 
     array (
       0 => 'app:frontendcomponentsspotlig',
-      1 => 1684945243,
+      1 => 1687207331,
       2 => 'app',
     ),
   ),
@@ -21,7 +21,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'app:frontend/objects/spotlight.tpl' => 1,
   ),
 ),false)) {
-function content_646e83e4d12b82_53001626 (Smarty_Internal_Template $_smarty_tpl) {
+function content_6490bdb9328436_93657185 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_checkPlugins(array(0=>array('file'=>'/opt/lampp/htdocs/filosofia/omp/lib/pkp/lib/vendor/smarty/smarty/libs/plugins/modifier.truncate.php','function'=>'smarty_modifier_truncate',),));
 ?>
 <div class="cmp_spotlights">
