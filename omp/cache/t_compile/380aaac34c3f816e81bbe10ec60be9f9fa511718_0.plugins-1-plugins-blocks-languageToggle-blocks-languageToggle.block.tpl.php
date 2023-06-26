@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.1.0, created on 2023-06-19 22:42:33
+/* Smarty version 4.1.0, created on 2023-06-22 19:10:55
   from 'plugins-1-plugins-blocks-languageToggle-blocks-languageToggle:block.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.1.0',
-  'unifunc' => 'content_6490bdb93ea223_14046570',
+  'unifunc' => 'content_6494809f5120f4_68531495',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '380aaac34c3f816e81bbe10ec60be9f9fa511718' => 
     array (
       0 => 'plugins-1-plugins-blocks-languageToggle-blocks-languageToggle:block.tpl',
-      1 => 1687207329,
+      1 => 1687453164,
       2 => 'plugins-1-plugins-blocks-languageToggle-blocks-languageToggle',
     ),
   ),
@@ -20,8 +20,8 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_6490bdb93ea223_14046570 (Smarty_Internal_Template $_smarty_tpl) {
-$_smarty_tpl->_checkPlugins(array(0=>array('file'=>'/opt/lampp/htdocs/filosofia/omp/lib/pkp/lib/vendor/smarty/smarty/libs/plugins/modifier.replace.php','function'=>'smarty_modifier_replace',),));
+function content_6494809f5120f4_68531495 (Smarty_Internal_Template $_smarty_tpl) {
+$_smarty_tpl->_checkPlugins(array(0=>array('file'=>'C:\\xampp\\htdocs\\filosofia\\omp\\lib\\pkp\\lib\\vendor\\smarty\\smarty\\libs\\plugins\\modifier.replace.php','function'=>'smarty_modifier_replace',),));
 if ($_smarty_tpl->tpl_vars['enableLanguageToggle']->value) {?>
 <div class="pkp_block block_language">
 	<h2 class="title">

@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.1.0, created on 2023-06-19 22:42:33
+/* Smarty version 4.1.0, created on 2023-06-22 19:10:53
   from 'app:frontendcomponentsspotlig' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.1.0',
-  'unifunc' => 'content_6490bdb9328436_93657185',
+  'unifunc' => 'content_6494809d1d1f29_15483619',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '623c32cd88e28d6784ecf29f6d0bd57ab00248a1' => 
     array (
       0 => 'app:frontendcomponentsspotlig',
-      1 => 1687207331,
+      1 => 1687453173,
       2 => 'app',
     ),
   ),
@@ -21,8 +21,8 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'app:frontend/objects/spotlight.tpl' => 1,
   ),
 ),false)) {
-function content_6490bdb9328436_93657185 (Smarty_Internal_Template $_smarty_tpl) {
-$_smarty_tpl->_checkPlugins(array(0=>array('file'=>'/opt/lampp/htdocs/filosofia/omp/lib/pkp/lib/vendor/smarty/smarty/libs/plugins/modifier.truncate.php','function'=>'smarty_modifier_truncate',),));
+function content_6494809d1d1f29_15483619 (Smarty_Internal_Template $_smarty_tpl) {
+$_smarty_tpl->_checkPlugins(array(0=>array('file'=>'C:\\xampp\\htdocs\\filosofia\\omp\\lib\\pkp\\lib\\vendor\\smarty\\smarty\\libs\\plugins\\modifier.truncate.php','function'=>'smarty_modifier_truncate',),));
 ?>
 <div class="cmp_spotlights">
 	<ul class="list">

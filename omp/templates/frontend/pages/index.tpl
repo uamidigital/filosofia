@@ -84,8 +84,16 @@
 					<input type="radio" name="radio" id="radio4">
 					<div class="tab4">
 						<h2>Red de autores</h2>
-						<svg id="graph-container"></svg>
+						<div id="grafico"></div>
+						<br><br>
+						<br><br>
+						<br><br>
+						<br><br>
 					</div>
+					<br><br>
+					<br><br>
+					<br><br>
+					<br><br>
 					<br><br>
 					<br><br>
 					<br><br>
@@ -97,6 +105,12 @@
 			</div>
 		</div>
 	</div>
+</div>
+<!-- Modal -->
+<div id="myModal" class="modal">
+<div id="modalContent" class="modal-content">
+  <!-- Contenido del modal -->
+</div>
 </div>
 
 	{* Homepage Image *}
