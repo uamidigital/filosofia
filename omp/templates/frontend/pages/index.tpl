@@ -47,7 +47,7 @@
       <button class="tab active" onclick="openTab(event, 'tab1')">Destacado</button>
       <button class="tab" onclick="openTab(event, 'tab2')">Novedades</button>
       <button class="tab" onclick="openTab(event, 'tab3')">Proximos</button>
-      <button class="tab" onclick="openTab(event, 'tab4')">Ir al catalogo</button>
+      <button class="tab" onclick="openTab(event, 'tab4')">Ir al catálogo</button>
     </div>
     <div class="tab-content" id="tab1">
       <h2>Inicio</h2>

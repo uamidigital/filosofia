@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.1.0, created on 2023-06-27 07:14:34
+/* Smarty version 4.1.0, created on 2023-06-27 18:27:40
   from 'app:frontendpagesindex.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.1.0',
-  'unifunc' => 'content_649a703a3dc3a7_04809608',
+  'unifunc' => 'content_649b0dfc65bb58_52717634',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '39b1599f8f1b1d44415ae2df41968bb30a1154ef' => 
     array (
       0 => 'app:frontendpagesindex.tpl',
-      1 => 1687842872,
+      1 => 1687883259,
       2 => 'app',
     ),
   ),
@@ -25,8 +25,8 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'app:frontend/components/footer.tpl' => 1,
   ),
 ),false)) {
-function content_649a703a3dc3a7_04809608 (Smarty_Internal_Template $_smarty_tpl) {
-$_smarty_tpl->_checkPlugins(array(0=>array('file'=>'C:\\xampp\\htdocs\\filosofia\\omp\\lib\\pkp\\lib\\vendor\\smarty\\smarty\\libs\\plugins\\modifier.date_format.php','function'=>'smarty_modifier_date_format',),));
+function content_649b0dfc65bb58_52717634 (Smarty_Internal_Template $_smarty_tpl) {
+$_smarty_tpl->_checkPlugins(array(0=>array('file'=>'/opt/lampp/htdocs/filosofia/omp/lib/pkp/lib/vendor/smarty/smarty/libs/plugins/modifier.date_format.php','function'=>'smarty_modifier_date_format',),));
 $_smarty_tpl->_subTemplateRender("app:frontend/components/header.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>
 
@@ -64,7 +64,7 @@ $_smarty_tpl->_subTemplateRender("app:frontend/components/header.tpl", $_smarty_
       <button class="tab active" onclick="openTab(event, 'tab1')">Destacado</button>
       <button class="tab" onclick="openTab(event, 'tab2')">Novedades</button>
       <button class="tab" onclick="openTab(event, 'tab3')">Proximos</button>
-      <button class="tab" onclick="openTab(event, 'tab4')">Ir al catalogo</button>
+      <button class="tab" onclick="openTab(event, 'tab4')">Ir al catálogo</button>
     </div>
     <div class="tab-content" id="tab1">
       <h2>Inicio</h2>

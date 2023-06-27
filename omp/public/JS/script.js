@@ -62,6 +62,7 @@ function showSlide(n) {
 
 const id = 9;
 var graphData = { nodes: [], links: [] };
+const librosAgregados = new Set();
 
 var fetchPromises = [];
 
@@ -73,8 +74,11 @@ for (let i = 1; i <= id; i++) {
       const libros = data.fullTitle.es_ES;
       const edil = data.copyrightHolder.es_ES;
       const fecha = data.datePublished;
-      graphData.nodes.push({ id: libros, message: authors, Editorial: edil, DATE: fecha});
-      //console.log(authors, i);
+      
+      if (authors !== null && libros !== null && edil !== null && fecha !== null && !librosAgregados.has(libros)) {
+        librosAgregados.add(libros);
+        graphData.nodes.push({ id: libros, message: authors, Editorial: edil, DATE: fecha });
+      }
     })
     .catch(error => {
       console.error('Error fetching data:', error);
@@ -85,7 +89,7 @@ for (let i = 1; i <= id; i++) {
 
 Promise.all(fetchPromises)
   .then(() => {
-    //console.log(graphData);
+    console.log(graphData);
     createForceDirectedGraph(graphData);
   });
 
