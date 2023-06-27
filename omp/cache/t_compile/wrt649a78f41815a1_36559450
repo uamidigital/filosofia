@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 4.1.0, created on 2023-06-27 07:51:49
+/* Smarty version 4.1.0, created on 2023-06-27 07:51:48
   from 'app:frontendpagesbook.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.1.0',
-  'unifunc' => 'content_649a78f5a5d5b4_24483063',
+  'unifunc' => 'content_649a78f4121460_32116935',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -23,7 +23,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'app:frontend/components/footer.tpl' => 1,
   ),
 ),false)) {
-function content_649a78f5a5d5b4_24483063 (Smarty_Internal_Template $_smarty_tpl) {
+function content_649a78f4121460_32116935 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_subTemplateRender("app:frontend/components/header.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array('pageTitleTranslated'=>$_smarty_tpl->tpl_vars['publishedSubmission']->value->getLocalizedFullTitle()), 0, false);
 ?>
 

@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.1.0, created on 2023-05-24 23:41:02
+/* Smarty version 4.1.0, created on 2023-06-27 07:51:50
   from 'app:frontendobjectsmonographf' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.1.0',
-  'unifunc' => 'content_646e846ead2979_09777200',
+  'unifunc' => 'content_649a78f6af4e06_08781436',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '1a43403fc96a795020edfbc1cc6004aa859621c9' => 
     array (
       0 => 'app:frontendobjectsmonographf',
-      1 => 1684945243,
+      1 => 1687453173,
       2 => 'app',
     ),
   ),
@@ -21,8 +21,8 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'app:frontend/components/downloadLink.tpl' => 3,
   ),
 ),false)) {
-function content_646e846ead2979_09777200 (Smarty_Internal_Template $_smarty_tpl) {
-$_smarty_tpl->_checkPlugins(array(0=>array('file'=>'/opt/lampp/htdocs/filosofia/omp/lib/pkp/lib/vendor/smarty/smarty/libs/plugins/modifier.date_format.php','function'=>'smarty_modifier_date_format',),));
+function content_649a78f6af4e06_08781436 (Smarty_Internal_Template $_smarty_tpl) {
+$_smarty_tpl->_checkPlugins(array(0=>array('file'=>'C:\\xampp\\htdocs\\filosofia\\omp\\lib\\pkp\\lib\\vendor\\smarty\\smarty\\libs\\plugins\\modifier.date_format.php','function'=>'smarty_modifier_date_format',),));
 ?>
 <div class="obj_monograph_full">
 
