@@ -60,37 +60,51 @@ function showSlide(n) {
 
 ////////////////////////////consulta de la api
 
-const id = 9;
-var graphData = { nodes: [], links: [] };
-const librosAgregados = new Set();
+let dataid = 0;
 
-var fetchPromises = [];
+fetch('http://localhost/filosofia/omp/index.php/pf/api/v1/submissions')
+  .then(response => response.json())
+  .then(data => {
+    const ids = data.itemsMax;
+    console.log(ids); // Imprime el conteo de datos "id" en la consola
+    dataid = ids;
+    console.log(dataid); // Imprime el valor asignado a dataid dentro del bloque .then()
 
-for (let i = 1; i <= id; i++) {
-  const fetchPromise = fetch('http://localhost/filosofia/omp/index.php/pf/api/v1/submissions/' + i + '/publications/' + i)
-    .then(response => response.json())
-    .then(data => {
-      const authors = data.authorsString;
-      const libros = data.fullTitle.es_ES;
-      const edil = data.copyrightHolder.es_ES;
-      const fecha = data.datePublished;
-      
-      if (authors !== null && libros !== null && edil !== null && fecha !== null && !librosAgregados.has(libros)) {
-        librosAgregados.add(libros);
-        graphData.nodes.push({ id: libros, message: authors, Editorial: edil, DATE: fecha });
-      }
-    })
-    .catch(error => {
-      console.error('Error fetching data:', error);
-    });
+    let id = dataid;
+    var graphData = { nodes: [], links: [] };
+    const librosAgregados = new Set();
 
-  fetchPromises.push(fetchPromise);
-}
+    var fetchPromises = [];
 
-Promise.all(fetchPromises)
-  .then(() => {
-    console.log(graphData);
-    createForceDirectedGraph(graphData);
+    for (let i = 1; i <= id; i++) {
+      const fetchPromise = fetch('http://localhost/filosofia/omp/index.php/pf/api/v1/submissions/' + i + '/publications/' + i)
+        .then(response => response.json())
+        .then(data => {
+          const authors = data.authorsString;
+          const libros = data.fullTitle.es_ES;
+          const edil = data.copyrightHolder.es_ES;
+          const fecha = data.datePublished;
+
+          if (authors !== null && libros !== null && edil !== null && fecha !== null && !librosAgregados.has(libros)) {
+            librosAgregados.add(libros);
+            graphData.nodes.push({ id: libros, message: authors, Editorial: edil, DATE: fecha });
+          }
+        })
+        .catch(error => {
+          console.error('Error fetching data:', error);
+        });
+
+      fetchPromises.push(fetchPromise);
+    }
+
+    Promise.all(fetchPromises)
+      .then(() => {
+        console.log(graphData);
+        createForceDirectedGraph(graphData);
+      });
+  })
+  .catch(error => {
+    console.error('Error:', error);
   });
 
 // Crear el gráfico force-directed con los datos
