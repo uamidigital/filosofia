@@ -66,9 +66,9 @@ fetch('http://localhost/filosofia/omp/index.php/pf/api/v1/submissions')
   .then(response => response.json())
   .then(data => {
     const ids = data.itemsMax;
-    console.log(ids); // Imprime el conteo de datos "id" en la consola
+    //console.log(ids); // Imprime el conteo de datos "id" en la consola
     dataid = ids;
-    console.log(dataid); // Imprime el valor asignado a dataid dentro del bloque .then()
+    //console.log(dataid); // Imprime el valor asignado a dataid dentro del bloque .then()
 
     let id = dataid;
     var graphData = { nodes: [], links: [] };
@@ -99,7 +99,7 @@ fetch('http://localhost/filosofia/omp/index.php/pf/api/v1/submissions')
 
     Promise.all(fetchPromises)
       .then(() => {
-        console.log(graphData);
+        //console.log(graphData);
         createForceDirectedGraph(graphData);
       });
   })

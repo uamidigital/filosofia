@@ -35,7 +35,7 @@
 
 	{assign var=counter value=1}
 	{foreach name="monographListLoop" from=$monographs item=monograph}
-		{if is_array($featured) && array_key_exists($monograph->getId(), $featured)}
+		{if is_array($featured) && array_key_exists($monograph->getId(), $featured)}dsds
 			{assign var="isFeatured" value=true}
 		{else}
 			{assign var="isFeatured" value=false}

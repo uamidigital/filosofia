@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.1.0, created on 2023-06-22 19:10:53
+/* Smarty version 4.1.0, created on 2023-07-06 00:24:26
   from 'app:frontendcomponentsmonogra' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.1.0',
-  'unifunc' => 'content_6494809d6b3b14_56669679',
+  'unifunc' => 'content_64a5ed9abfce00_96915530',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '1740c2ec5409f96edca701e7e6e1d6b1d15d687f' => 
     array (
       0 => 'app:frontendcomponentsmonogra',
-      1 => 1687453173,
+      1 => 1688595864,
       2 => 'app',
     ),
   ),
@@ -21,7 +21,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'app:frontend/objects/monograph_summary.tpl' => 2,
   ),
 ),false)) {
-function content_6494809d6b3b14_56669679 (Smarty_Internal_Template $_smarty_tpl) {
+function content_64a5ed9abfce00_96915530 (Smarty_Internal_Template $_smarty_tpl) {
 if (!$_smarty_tpl->tpl_vars['heading']->value) {?>
 	<?php $_smarty_tpl->_assignInScope('heading', "h2");
 }
@@ -53,7 +53,7 @@ $_smarty_tpl->tpl_vars['monograph']->do_else = true;
 if ($_from !== null) foreach ($_from as $_smarty_tpl->tpl_vars['monograph']->value) {
 $_smarty_tpl->tpl_vars['monograph']->do_else = false;
 ?>
-		<?php if (is_array($_smarty_tpl->tpl_vars['featured']->value) && array_key_exists($_smarty_tpl->tpl_vars['monograph']->value->getId(),$_smarty_tpl->tpl_vars['featured']->value)) {?>
+		<?php if (is_array($_smarty_tpl->tpl_vars['featured']->value) && array_key_exists($_smarty_tpl->tpl_vars['monograph']->value->getId(),$_smarty_tpl->tpl_vars['featured']->value)) {?>dsds
 			<?php $_smarty_tpl->_assignInScope('isFeatured', true);?>
 		<?php } else { ?>
 			<?php $_smarty_tpl->_assignInScope('isFeatured', false);?>

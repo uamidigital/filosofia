@@ -10,13 +10,36 @@
  * @uses $monograph Monograph The monograph to be displayed
  * @uses $isFeatured bool Is this a featured monograph?
  *}
-<div class="obj_monograph_summary{if $isFeatured} is_featured{/if}">
-		<a {if $press}href="{url press=$press->getPath() page="catalog" op="book" path=$monograph->getBestId()}"{else}href="{url page="catalog" op="book" path=$monograph->getBestId()}"{/if} class="cover">
+ <div class="obj_monograph_summary{if $isFeatured} is_featured{/if}">
+ 
+ <div class="container5">
+	<main>
+		<div class = "card">
+			<img src="{$monograph->getCurrentPublication()->getLocalizedCoverImageThumbnailUrl($monograph->getData('contextId'))}" alt="{$coverImage.altText|escape|default:''}">
+			<div class="card-content">
+				<h2 {if $press}href="{url press=$press->getPath() page="catalog" op="book" path=$monograph->getBestId()}"{else}href="{url page="catalog" op="book" path=$monograph->getBestId()}"{/if}>
+					{$monograph->getLocalizedFullTitle()|escape} 
+				</h2>
+				<p>
+					{$monograph->getAuthorOrEditorString()|escape}
+					{$monograph->getDatePublished()|date_format:$dateFormatLong}
+				</p>
+				<a class="button" {if $press}href="{url press=$press->getPath() page="catalog" op="book" path=$monograph->getBestId()}"{else}href="{url page="catalog" op="book" path=$monograph->getBestId()}"{/if} class="cover">
+					{assign var="coverImage" value=$monograph->getCurrentPublication()->getLocalizedData('coverImage')}
+					ver <span class="material-symbols-outlined">
+						arrow_right_alt
+				</a>
+			</div>
+		</div>
+	</main>
+</div>
+
+
+		
+		{*<a class="button" {if $press}href="{url press=$press->getPath() page="catalog" op="book" path=$monograph->getBestId()}"{else}href="{url page="catalog" op="book" path=$monograph->getBestId()}"{/if} class="cover">
 			{assign var="coverImage" value=$monograph->getCurrentPublication()->getLocalizedData('coverImage')}
-			<img
-				src="{$monograph->getCurrentPublication()->getLocalizedCoverImageThumbnailUrl($monograph->getData('contextId'))}"
-				alt="{$coverImage.altText|escape|default:''}"
-			>
+			<span class="material-symbols-outlined">
+				  arrow_right_alt
 		</a>
 		{if $monograph->getSeriesPosition()}
 			<div class="seriesPosition">
@@ -25,7 +48,7 @@
 		{/if}
 		<{$heading} class="title">
 			<a {if $press}href="{url press=$press->getPath() page="catalog" op="book" path=$monograph->getBestId()}"{else}href="{url page="catalog" op="book" path=$monograph->getBestId()}"{/if}>
-				{$monograph->getLocalizedFullTitle()|escape}
+				{$monograph->getLocalizedFullTitle()|escape} 
 			</a>
 		</{$heading}>
 		<div class="author">
@@ -33,5 +56,13 @@
 		</div>
 		<div class="date">
 			{$monograph->getDatePublished()|date_format:$dateFormatLong}
-		</div>
-</div><!-- .obj_monograph_summary -->
+		</div>**}
+</div>
+		
+		
+
+
+
+  
+
+<!-- .obj_monograph_summary -->

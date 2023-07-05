@@ -20,8 +20,135 @@
 {/strip}
 <!DOCTYPE html>
 <html lang="{$currentLocale|replace:"_":"-"}" xml:lang="{$currentLocale|replace:"_":"-"}">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Roboto:wght@300&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+<style>
+.container5 {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: var(--color-primary-white);
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0);
+  opacity: 1; /* Cambiar la opacidad inicial a 1 */
+  transition: opacity 0.3s ease-out;
+}
+
+.card h2,
+.card p,
+.card a {
+  color: #57A519;
+}
+
+.card:hover h2,
+.card:hover p,
+.card:hover a {
+  color: #57A519;
+}
+
+.card:hover::before {
+  background-color: rgba(255, 255, 255, 0); /* Cambiar el color de fondo a blanco transparente */
+  opacity: 0; /* Cambiar la opacidad a 0 para que se vuelva transparente */
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.card {
+  width: 200px;
+  height: 300px;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+  color: var(--color-primary-white);
+  box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+  position: absolute;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.9;
+  transition: opacity 0.2s ease-out;
+}
+
+.card h2 {
+  position: absolute;
+  inset: auto auto 5px 30px;
+  margin: 0;
+  transition: inset 0.3s 0.3s ease-out;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: normal;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8); /* Mantener la sombra en hover */
+  font-weight: bold; /* Agregar negrita al texto */
+}
+
+.card p,
+.card a {
+  position: absolute;
+  opacity: 0;
+  max-width: 100%;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8); /* Mantener la sombra en hover */
+  font-weight: bold; /* Agregar negrita al texto */
+  transition: opacity 0.9s ease-out;
+}
+
+.card p {
+  inset: auto auto 30px 30px;
+}
+
+.card a {
+  inset: auto auto 20px 30px;
+  text-decoration: none;
+}
+
+.card:hover h2 {
+  inset: auto auto 220px 30px;
+  transition: inset 0.3s ease-out;
+}
+
+.card:hover p,
+.card:hover a {
+  opacity: 1;
+  transition: opacity 0.5s 0.1s ease-in;
+}
+
+
+.card:hover img {
+  transition: opacity 0.3s ease-in;
+  opacity: 0.5;
+}
+
+.material-symbols-outlined {
+  vertical-align: middle;
+}
+
+	  
+</style>
 <script src="https://d3js.org/d3.v7.min.js"></script>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
 
 {if !$pageTitleTranslated}{capture assign="pageTitleTranslated"}{translate key=$pageTitle}{/capture}{/if}
 {include file="frontend/components/headerHead.tpl"}

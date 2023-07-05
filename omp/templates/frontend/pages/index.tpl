@@ -90,12 +90,12 @@
 
 	{* Featured *}
 	{if !empty($featuredMonographs)}
-		{include file="frontend/components/monographList.tpl" monographs=$featuredMonographs titleKey="catalog.featured"}
+		{include file="frontend/components/monographList.tpl" monographs=$featuredMonographs titleKey="catalog.featured"} fsfdf
 	{/if}
 
 	{* New releases *}
 	{if !empty($newReleases)}
-		{include file="frontend/components/monographList.tpl" monographs=$newReleases titleKey="catalog.newReleases"}
+		{include file="frontend/components/monographList.tpl" monographs=$newReleases titleKey="catalog.newReleases"} sa
 	{/if}
 
 	{* Announcements *}
