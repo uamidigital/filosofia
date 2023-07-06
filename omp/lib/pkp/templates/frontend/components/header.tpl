@@ -33,8 +33,6 @@
   flex: 1;
 }
 
-
-
 .card::before {
   content: '';
   position: absolute;
@@ -52,7 +50,7 @@
 .card a {
   color: #57A519;
   font-size: 16px; /* Tamaño de fuente inicial */
-  text-align: justify;
+  
   transition: font-size 0.3s ease-out; /* Transición de tamaño de fuente */
 }
 
@@ -92,9 +90,8 @@ main {
   height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   padding: 20px;
-  text-align: justify; /* Justificar el texto dentro del card-content */
+  
 }
 
 .card img {

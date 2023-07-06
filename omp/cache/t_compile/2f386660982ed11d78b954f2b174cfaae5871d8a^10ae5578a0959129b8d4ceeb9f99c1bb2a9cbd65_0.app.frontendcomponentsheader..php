@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.1.0, created on 2023-07-07 01:43:39
+/* Smarty version 4.1.0, created on 2023-07-07 01:47:24
   from 'app:frontendcomponentsheader.' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.1.0',
-  'unifunc' => 'content_64a751abbd3bd7_73249343',
+  'unifunc' => 'content_64a7528c379e97_39386435',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '10ae5578a0959129b8d4ceeb9f99c1bb2a9cbd65' => 
     array (
       0 => 'app:frontendcomponentsheader.',
-      1 => 1688687016,
+      1 => 1688687241,
       2 => 'app',
     ),
   ),
@@ -22,7 +22,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'app:frontend/components/skipLinks.tpl' => 1,
   ),
 ),false)) {
-function content_64a751abbd3bd7_73249343 (Smarty_Internal_Template $_smarty_tpl) {
+function content_64a7528c379e97_39386435 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_checkPlugins(array(0=>array('file'=>'/opt/lampp/htdocs/filosofia/omp/lib/pkp/lib/vendor/smarty/smarty/libs/plugins/modifier.replace.php','function'=>'smarty_modifier_replace',),));
 $_smarty_tpl->_assignInScope('showingLogo', true);
 if (!$_smarty_tpl->tpl_vars['displayPageHeaderLogo']->value) {
@@ -45,8 +45,6 @@ $_smarty_tpl->_assignInScope('showingLogo', false);
   flex: 1;
 }
 
-
-
 .card::before {
   content: '';
   position: absolute;
@@ -64,7 +62,7 @@ $_smarty_tpl->_assignInScope('showingLogo', false);
 .card a {
   color: #57A519;
   font-size: 16px; /* Tamaño de fuente inicial */
-  text-align: justify;
+  
   transition: font-size 0.3s ease-out; /* Transición de tamaño de fuente */
 }
 
@@ -104,9 +102,8 @@ main {
   height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   padding: 20px;
-  text-align: justify; /* Justificar el texto dentro del card-content */
+  
 }
 
 .card img {
