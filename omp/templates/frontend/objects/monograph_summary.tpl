@@ -9,10 +9,10 @@
  *
  * @uses $monograph Monograph The monograph to be displayed
  * @uses $isFeatured bool Is this a featured monograph?
- *}
- <div class="obj_monograph_summary{if $isFeatured} is_featured{/if}">
  
- <div class="container5">
+ <div class="obj_monograph_summary{if $isFeatured} is_featured{/if}">*}
+ 
+ 
 	<main>
 		<div class = "card">
 			<img src="{$monograph->getCurrentPublication()->getLocalizedCoverImageThumbnailUrl($monograph->getData('contextId'))}" alt="{$coverImage.altText|escape|default:''}">
@@ -32,7 +32,7 @@
 			</div>
 		</div>
 	</main>
-</div>
+
 
 
 		
@@ -56,8 +56,8 @@
 		</div>
 		<div class="date">
 			{$monograph->getDatePublished()|date_format:$dateFormatLong}
-		</div>**}
-</div>
+		</div>
+</div>**}
 		
 		
 

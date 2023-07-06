@@ -25,6 +25,13 @@
 	<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Roboto:wght@300&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
 <style>
+	.contenido {
+  display: flex;
+}
+
+.columna {
+  flex: 1;
+}
 .container5 {
   max-width: 400px;
   margin: 0 auto;
@@ -73,7 +80,7 @@ main {
 .card {
   width: 200px;
   height: 300px;
-  border-radius: 10px;
+  border-radius: 5px;
   overflow: hidden;
   cursor: pointer;
   position: relative;

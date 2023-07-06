@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.1.0, created on 2023-07-05 00:35:14
+/* Smarty version 4.1.0, created on 2023-07-06 22:30:15
   from 'app:frontendcomponentsheader.' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.1.0',
-  'unifunc' => 'content_64a49ea2c101e5_79621737',
+  'unifunc' => 'content_64a724573e8ca8_76442843',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '10ae5578a0959129b8d4ceeb9f99c1bb2a9cbd65' => 
     array (
       0 => 'app:frontendcomponentsheader.',
-      1 => 1688510110,
+      1 => 1688675410,
       2 => 'app',
     ),
   ),
@@ -22,7 +22,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'app:frontend/components/skipLinks.tpl' => 1,
   ),
 ),false)) {
-function content_64a49ea2c101e5_79621737 (Smarty_Internal_Template $_smarty_tpl) {
+function content_64a724573e8ca8_76442843 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_checkPlugins(array(0=>array('file'=>'/opt/lampp/htdocs/filosofia/omp/lib/pkp/lib/vendor/smarty/smarty/libs/plugins/modifier.replace.php','function'=>'smarty_modifier_replace',),));
 $_smarty_tpl->_assignInScope('showingLogo', true);
 if (!$_smarty_tpl->tpl_vars['displayPageHeaderLogo']->value) {
@@ -37,6 +37,13 @@ $_smarty_tpl->_assignInScope('showingLogo', false);
 	<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Roboto:wght@300&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
 <style>
+	.contenido {
+  display: flex;
+}
+
+.columna {
+  flex: 1;
+}
 .container5 {
   max-width: 400px;
   margin: 0 auto;
@@ -85,7 +92,7 @@ main {
 .card {
   width: 200px;
   height: 300px;
-  border-radius: 10px;
+  border-radius: 5px;
   overflow: hidden;
   cursor: pointer;
   position: relative;

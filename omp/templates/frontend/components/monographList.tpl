@@ -26,35 +26,45 @@
 {/if}
 
 <div class="cmp_monographs_list">
-	{* Optional title *}
-	{if $titleKey}
-		<{$heading} class="title">
-			{translate key=$titleKey}
-		</{$heading}>
-	{/if}
+    {assign var="currentTitleKey" value=""}
+    {assign var="groupCounter" value=0}
 
-	{assign var=counter value=1}
-	{foreach name="monographListLoop" from=$monographs item=monograph}
-		{if is_array($featured) && array_key_exists($monograph->getId(), $featured)}dsds
-			{assign var="isFeatured" value=true}
-		{else}
-			{assign var="isFeatured" value=false}
-		{/if}
-		{if $isFeatured}
-			{include file="frontend/objects/monograph_summary.tpl" monograph=$monograph isFeatured=$isFeatured heading=$monographHeading}
-		{else}
-			{if $counter is odd by 1}
-				<div class="row">
-			{/if}
-				{include file="frontend/objects/monograph_summary.tpl" monograph=$monograph isFeatured=$isFeatured heading=$monographHeading}
-			{if $counter is even by 1}
-				</div>
-			{/if}
-			{assign var=counter value=$counter+1}
-		{/if}
-	{/foreach}
-	{* Close .row if we have an odd number of titles *}
-	{if $counter > 1 && $counter is even by 1}
-		</div>
-	{/if}
+    {foreach name="monographListLoop" from=$monographs item=monograph}
+        {if is_array($featured) && array_key_exists($monograph->getId(), $featured)}
+            {assign var="isFeatured" value=true}
+        {else}
+            {assign var="isFeatured" value=false}
+        {/if}
+
+        {if $titleKey != $currentTitleKey}
+            {assign var="currentTitleKey" value=$titleKey}
+            {if $currentTitleKey}
+                <{$heading} class="title">
+                    {translate key=$currentTitleKey}
+                </{$heading}>
+            {/if}
+            {assign var="groupCounter" value=1}
+            <div class="contenido">
+        {else}
+            {assign var="groupCounter" value=$groupCounter+1}
+        {/if}
+
+        <div class="columna">
+            {include file="frontend/objects/monograph_summary.tpl" monograph=$monograph isFeatured=$isFeatured heading=$monographHeading}
+        </div>
+
+        {if $groupCounter % 3 == 0}
+            </div>
+            {if $titleKey != $currentTitleKey || $groupCounter < $counter}
+                <div class="contenido">
+            {/if}
+        {/if}
+    {/foreach}
+
+    {if $groupCounter % 3 != 0}
+        </div>
+    {/if}
+
 </div>
+
+

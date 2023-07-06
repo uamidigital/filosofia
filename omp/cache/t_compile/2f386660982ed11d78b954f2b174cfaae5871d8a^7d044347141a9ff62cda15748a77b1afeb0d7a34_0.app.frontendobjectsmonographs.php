@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.1.0, created on 2023-07-06 01:19:26
+/* Smarty version 4.1.0, created on 2023-07-06 20:28:33
   from 'app:frontendobjectsmonographs' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.1.0',
-  'unifunc' => 'content_64a5fa7ec11dd6_18740344',
+  'unifunc' => 'content_64a707d120b973_41934931',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '7d044347141a9ff62cda15748a77b1afeb0d7a34' => 
     array (
       0 => 'app:frontendobjectsmonographs',
-      1 => 1688599163,
+      1 => 1688668107,
       2 => 'app',
     ),
   ),
@@ -20,12 +20,11 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_64a5fa7ec11dd6_18740344 (Smarty_Internal_Template $_smarty_tpl) {
+function content_64a707d120b973_41934931 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_checkPlugins(array(0=>array('file'=>'/opt/lampp/htdocs/filosofia/omp/lib/pkp/lib/vendor/smarty/smarty/libs/plugins/modifier.date_format.php','function'=>'smarty_modifier_date_format',),));
 ?>
- <div class="obj_monograph_summary<?php if ($_smarty_tpl->tpl_vars['isFeatured']->value) {?> is_featured<?php }?>">
  
- <div class="container5">
+ 
 	<main>
 		<div class = "card">
 			<img src="<?php echo $_smarty_tpl->tpl_vars['monograph']->value->getCurrentPublication()->getLocalizedCoverImageThumbnailUrl($_smarty_tpl->tpl_vars['monograph']->value->getData('contextId'));?>
@@ -54,12 +53,11 @@ $_smarty_tpl->_checkPlugins(array(0=>array('file'=>'/opt/lampp/htdocs/filosofia/
 			</div>
 		</div>
 	</main>
-</div>
+
 
 
 		
-		</div>
-		
+				
 		
 
 

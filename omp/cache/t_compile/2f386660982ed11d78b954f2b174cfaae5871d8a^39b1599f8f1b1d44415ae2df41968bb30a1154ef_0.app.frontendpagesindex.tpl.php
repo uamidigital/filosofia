@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.1.0, created on 2023-07-05 01:39:20
+/* Smarty version 4.1.0, created on 2023-07-06 18:47:27
   from 'app:frontendpagesindex.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.1.0',
-  'unifunc' => 'content_64a4ada8aef458_75133087',
+  'unifunc' => 'content_64a6f01f46a780_41246234',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '39b1599f8f1b1d44415ae2df41968bb30a1154ef' => 
     array (
       0 => 'app:frontendpagesindex.tpl',
-      1 => 1688513947,
+      1 => 1688662046,
       2 => 'app',
     ),
   ),
@@ -25,7 +25,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'app:frontend/components/footer.tpl' => 1,
   ),
 ),false)) {
-function content_64a4ada8aef458_75133087 (Smarty_Internal_Template $_smarty_tpl) {
+function content_64a6f01f46a780_41246234 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_checkPlugins(array(0=>array('file'=>'/opt/lampp/htdocs/filosofia/omp/lib/pkp/lib/vendor/smarty/smarty/libs/plugins/modifier.date_format.php','function'=>'smarty_modifier_date_format',),));
 $_smarty_tpl->_subTemplateRender("app:frontend/components/header.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>
@@ -110,12 +110,12 @@ $_smarty_tpl->_subTemplateRender("app:frontend/components/header.tpl", $_smarty_
 
 		<?php if (!empty($_smarty_tpl->tpl_vars['featuredMonographs']->value)) {?>
 		<?php $_smarty_tpl->_subTemplateRender("app:frontend/components/monographList.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array('monographs'=>$_smarty_tpl->tpl_vars['featuredMonographs']->value,'titleKey'=>"catalog.featured"), 0, false);
-?> fsfdf
+?>
 	<?php }?>
 
 		<?php if (!empty($_smarty_tpl->tpl_vars['newReleases']->value)) {?>
 		<?php $_smarty_tpl->_subTemplateRender("app:frontend/components/monographList.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array('monographs'=>$_smarty_tpl->tpl_vars['newReleases']->value,'titleKey'=>"catalog.newReleases"), 0, true);
-?> sa
+?>
 	<?php }?>
 
 		<?php if ($_smarty_tpl->tpl_vars['numAnnouncementsHomepage']->value && count($_smarty_tpl->tpl_vars['announcements']->value)) {?>

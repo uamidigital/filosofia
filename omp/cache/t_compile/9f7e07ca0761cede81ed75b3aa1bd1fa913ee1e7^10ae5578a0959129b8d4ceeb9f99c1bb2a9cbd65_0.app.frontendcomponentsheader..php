@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.1.0, created on 2023-07-04 00:47:57
+/* Smarty version 4.1.0, created on 2023-07-06 23:23:18
   from 'app:frontendcomponentsheader.' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.1.0',
-  'unifunc' => 'content_64a3501d54fc37_53041020',
+  'unifunc' => 'content_64a730c6bd20f0_41909687',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '10ae5578a0959129b8d4ceeb9f99c1bb2a9cbd65' => 
     array (
       0 => 'app:frontendcomponentsheader.',
-      1 => 1688424191,
+      1 => 1688675410,
       2 => 'app',
     ),
   ),
@@ -22,7 +22,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'app:frontend/components/skipLinks.tpl' => 1,
   ),
 ),false)) {
-function content_64a3501d54fc37_53041020 (Smarty_Internal_Template $_smarty_tpl) {
+function content_64a730c6bd20f0_41909687 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_checkPlugins(array(0=>array('file'=>'/opt/lampp/htdocs/filosofia/omp/lib/pkp/lib/vendor/smarty/smarty/libs/plugins/modifier.replace.php','function'=>'smarty_modifier_replace',),));
 $_smarty_tpl->_assignInScope('showingLogo', true);
 if (!$_smarty_tpl->tpl_vars['displayPageHeaderLogo']->value) {
@@ -37,110 +37,132 @@ $_smarty_tpl->_assignInScope('showingLogo', false);
 	<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Roboto:wght@300&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
 <style>
-	.container5 {
-		max-width: 600px;
-		margin: 0 auto;
-		padding: 20px;
-	  }
-	  
-	  // Colors
-	  
-	  /* Colors */
-	  :root {
-		--color-primary-white: rgb(240, 240, 240);
-	  }
-	  
-	  main {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		padding: 50px;
-		font-family: 'Roboto', sans-serif;
-	  }
-	  
-	  .card {
-		width: 300px;
-		height: 500px;
-		border-radius: 10px;
-		overflow: hidden;
-		cursor: pointer;
-		position: relative;
-		background-color: var(--color-primary-white);
-		transition: background-color 0.3s ease;
-		box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);
-	  }
-	  
-	  .card img {
-		position: absolute;
-		object-fit: cover;
-		width: 100%;
-		height: 100%;
-		top: 0;
-		left: 0;
-		opacity: 0.9;
-		transition: opacity 0.3s ease-out;
-	  }
-	  
-	  .card h2 {
-		position: absolute;
-		inset: auto auto 5px 30px;
-		margin: 0;
-		transition: inset 0.3s 0.3s ease-out;
-		font-family: 'Roboto Condensed', sans-serif;
-		font-weight: normal;
-		color: white;
-		text-transform: uppercase;
-	  }
-	  
-	  .card p,
-	  .card a {
-		color: white;
-		position: absolute;
-		opacity: 0;
-		max-width: 100%;
-		transition: opacity 0.3s ease-out;
-	  }
-	  
-	  .card p {
-		inset: auto auto 30px 30px;
-	  }
-	  
-	  .card a {
-		color: white;
-		inset: auto auto 20px 30px;
-		
-		text-decoration: none;
-	  }
+	.contenido {
+  display: flex;
+}
+
+.columna {
+  flex: 1;
+}
+.container5 {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: var(--color-primary-white);
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0);
+  opacity: 1; /* Cambiar la opacidad inicial a 1 */
+  transition: opacity 0.3s ease-out;
+}
+
+.card h2,
+.card p,
+.card a {
+  color: #57A519;
+}
+
+.card:hover h2,
+.card:hover p,
+.card:hover a {
+  color: #57A519;
+}
+
+.card:hover::before {
+  background-color: rgba(255, 255, 255, 0); /* Cambiar el color de fondo a blanco transparente */
+  opacity: 0; /* Cambiar la opacidad a 0 para que se vuelva transparente */
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.card {
+  width: 200px;
+  height: 300px;
+  border-radius: 5px;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+  color: var(--color-primary-white);
+  box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+  position: absolute;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.9;
+  transition: opacity 0.2s ease-out;
+}
+
+.card h2 {
+  position: absolute;
+  inset: auto auto 5px 30px;
+  margin: 0;
+  transition: inset 0.3s 0.3s ease-out;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: normal;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8); /* Mantener la sombra en hover */
+  font-weight: bold; /* Agregar negrita al texto */
+}
+
+.card p,
+.card a {
+  position: absolute;
+  opacity: 0;
+  max-width: 100%;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8); /* Mantener la sombra en hover */
+  font-weight: bold; /* Agregar negrita al texto */
+  transition: opacity 0.9s ease-out;
+}
+
+.card p {
+  inset: auto auto 30px 30px;
+}
+
+.card a {
+  inset: auto auto 20px 30px;
+  text-decoration: none;
+}
+
+.card:hover h2 {
+  inset: auto auto 220px 30px;
+  transition: inset 0.3s ease-out;
+}
+
+.card:hover p,
+.card:hover a {
+  opacity: 1;
+  transition: opacity 0.5s 0.1s ease-in;
+}
 
 
-	  .card:hover {
-	  	background-color: rgba(255, 255, 255, 0.9); /* Cambia este valor según el nivel de opacidad y el tono de blanco que desees */
-	  }
-	  
-	  .card:hover h2 {
-		inset: auto auto 220px 30px;
-		transition: inset 0.3s ease-out;
-		color: #57A519;
-	  }
-	  
-	  .card:hover p,
-	  .card:hover a {
-		opacity: 1;
-		transition: opacity 0.5s 0.1s ease-in;
-		color: #57A519;
-	  }
-	  
-	  .card:hover img {
-		transition: opacity 0.3s ease-in;
-		opacity: 2;
-	  }
+.card:hover img {
+  transition: opacity 0.3s ease-in;
+  opacity: 0.5;
+}
 
-	  
-	  
-	  .material-symbols-outlined {
-		vertical-align: middle;
-	  }
+.material-symbols-outlined {
+  vertical-align: middle;
+}
+
 	  
 </style>
 <?php echo '<script'; ?>
