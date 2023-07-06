@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.1.0, created on 2023-07-06 22:30:15
+/* Smarty version 4.1.0, created on 2023-07-07 01:43:39
   from 'app:frontendcomponentsheader.' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.1.0',
-  'unifunc' => 'content_64a724573e8ca8_76442843',
+  'unifunc' => 'content_64a751abbd3bd7_73249343',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '10ae5578a0959129b8d4ceeb9f99c1bb2a9cbd65' => 
     array (
       0 => 'app:frontendcomponentsheader.',
-      1 => 1688675410,
+      1 => 1688687016,
       2 => 'app',
     ),
   ),
@@ -22,7 +22,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'app:frontend/components/skipLinks.tpl' => 1,
   ),
 ),false)) {
-function content_64a724573e8ca8_76442843 (Smarty_Internal_Template $_smarty_tpl) {
+function content_64a751abbd3bd7_73249343 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_checkPlugins(array(0=>array('file'=>'/opt/lampp/htdocs/filosofia/omp/lib/pkp/lib/vendor/smarty/smarty/libs/plugins/modifier.replace.php','function'=>'smarty_modifier_replace',),));
 $_smarty_tpl->_assignInScope('showingLogo', true);
 if (!$_smarty_tpl->tpl_vars['displayPageHeaderLogo']->value) {
@@ -44,12 +44,8 @@ $_smarty_tpl->_assignInScope('showingLogo', false);
 .columna {
   flex: 1;
 }
-.container5 {
-  max-width: 400px;
-  margin: 0 auto;
-  padding: 20px;
-  background-color: var(--color-primary-white);
-}
+
+
 
 .card::before {
   content: '';
@@ -59,7 +55,7 @@ $_smarty_tpl->_assignInScope('showingLogo', false);
   width: 100%;
   height: 100%;
   background-color: rgba(255, 255, 255, 0);
-  opacity: 1; /* Cambiar la opacidad inicial a 1 */
+  opacity: 1;
   transition: opacity 0.3s ease-out;
 }
 
@@ -67,17 +63,20 @@ $_smarty_tpl->_assignInScope('showingLogo', false);
 .card p,
 .card a {
   color: #57A519;
+  font-size: 16px; /* Tamaño de fuente inicial */
+  text-align: justify;
+  transition: font-size 0.3s ease-out; /* Transición de tamaño de fuente */
 }
 
 .card:hover h2,
 .card:hover p,
 .card:hover a {
-  color: #57A519;
+  font-size: 12px; /* Tamaño de fuente reducido después del hover */
 }
 
 .card:hover::before {
-  background-color: rgba(255, 255, 255, 0); /* Cambiar el color de fondo a blanco transparente */
-  opacity: 0; /* Cambiar la opacidad a 0 para que se vuelva transparente */
+  background-color: rgba(255, 255, 255, 0);
+  opacity: 0;
 }
 
 main {
@@ -100,6 +99,16 @@ main {
   box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);
 }
 
+.card-content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+  text-align: justify; /* Justificar el texto dentro del card-content */
+}
+
 .card img {
   position: absolute;
   object-fit: cover;
@@ -119,8 +128,8 @@ main {
   font-family: 'Roboto Condensed', sans-serif;
   font-weight: normal;
   text-transform: uppercase;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8); /* Mantener la sombra en hover */
-  font-weight: bold; /* Agregar negrita al texto */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+  font-weight: bold;
 }
 
 .card p,
@@ -128,13 +137,13 @@ main {
   position: absolute;
   opacity: 0;
   max-width: 100%;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8); /* Mantener la sombra en hover */
-  font-weight: bold; /* Agregar negrita al texto */
-  transition: opacity 0.9s ease-out;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+  font-weight: bold;
+  transition: opacity 0.3s ease-out;
 }
 
 .card p {
-  inset: auto auto 30px 30px;
+  inset: auto auto 20px 20px;
 }
 
 .card a {
@@ -153,15 +162,15 @@ main {
   transition: opacity 0.5s 0.1s ease-in;
 }
 
-
 .card:hover img {
   transition: opacity 0.3s ease-in;
-  opacity: 0.5;
+  opacity: 0.1;
 }
 
 .material-symbols-outlined {
   vertical-align: middle;
 }
+
 
 	  
 </style>

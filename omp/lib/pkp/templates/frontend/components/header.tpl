@@ -32,12 +32,8 @@
 .columna {
   flex: 1;
 }
-.container5 {
-  max-width: 400px;
-  margin: 0 auto;
-  padding: 20px;
-  background-color: var(--color-primary-white);
-}
+
+
 
 .card::before {
   content: '';
@@ -47,7 +43,7 @@
   width: 100%;
   height: 100%;
   background-color: rgba(255, 255, 255, 0);
-  opacity: 1; /* Cambiar la opacidad inicial a 1 */
+  opacity: 1;
   transition: opacity 0.3s ease-out;
 }
 
@@ -55,17 +51,20 @@
 .card p,
 .card a {
   color: #57A519;
+  font-size: 16px; /* Tamaño de fuente inicial */
+  text-align: justify;
+  transition: font-size 0.3s ease-out; /* Transición de tamaño de fuente */
 }
 
 .card:hover h2,
 .card:hover p,
 .card:hover a {
-  color: #57A519;
+  font-size: 12px; /* Tamaño de fuente reducido después del hover */
 }
 
 .card:hover::before {
-  background-color: rgba(255, 255, 255, 0); /* Cambiar el color de fondo a blanco transparente */
-  opacity: 0; /* Cambiar la opacidad a 0 para que se vuelva transparente */
+  background-color: rgba(255, 255, 255, 0);
+  opacity: 0;
 }
 
 main {
@@ -88,6 +87,16 @@ main {
   box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);
 }
 
+.card-content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+  text-align: justify; /* Justificar el texto dentro del card-content */
+}
+
 .card img {
   position: absolute;
   object-fit: cover;
@@ -107,8 +116,8 @@ main {
   font-family: 'Roboto Condensed', sans-serif;
   font-weight: normal;
   text-transform: uppercase;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8); /* Mantener la sombra en hover */
-  font-weight: bold; /* Agregar negrita al texto */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+  font-weight: bold;
 }
 
 .card p,
@@ -116,13 +125,13 @@ main {
   position: absolute;
   opacity: 0;
   max-width: 100%;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8); /* Mantener la sombra en hover */
-  font-weight: bold; /* Agregar negrita al texto */
-  transition: opacity 0.9s ease-out;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+  font-weight: bold;
+  transition: opacity 0.3s ease-out;
 }
 
 .card p {
-  inset: auto auto 30px 30px;
+  inset: auto auto 20px 20px;
 }
 
 .card a {
@@ -141,15 +150,15 @@ main {
   transition: opacity 0.5s 0.1s ease-in;
 }
 
-
 .card:hover img {
   transition: opacity 0.3s ease-in;
-  opacity: 0.5;
+  opacity: 0.1;
 }
 
 .material-symbols-outlined {
   vertical-align: middle;
 }
+
 
 	  
 </style>
