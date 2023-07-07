@@ -70,13 +70,13 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 50px;
+  padding: 15px;
   font-family: 'Roboto', sans-serif;
 }
 
 .card {
-  width: 200px;
-  height: 300px;
+  width: 250px;
+  height: 350px;
   border-radius: 5px;
   overflow: hidden;
   cursor: pointer;
@@ -106,8 +106,8 @@ main {
 }
 
 .card h2 {
-  position: absolute;
-  inset: auto auto 5px 30px;
+	position: absolute;
+  inset: auto auto 10px 0px;
   margin: 0;
   transition: inset 0.3s 0.3s ease-out;
   font-family: 'Roboto Condensed', sans-serif;
@@ -115,6 +115,11 @@ main {
   text-transform: uppercase;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
   font-weight: bold;
+  background-color: rgba(255, 255, 255, 1);
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  z-index: 1;
 }
 
 .card p,
@@ -137,8 +142,10 @@ main {
 }
 
 .card:hover h2 {
-  inset: auto auto 220px 30px;
+	inset: auto auto 220px 0px;
   transition: inset 0.3s ease-out;
+  background-color: transparent;
+  z-index: auto;
 }
 
 .card:hover p,

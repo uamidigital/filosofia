@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.1.0, created on 2023-07-06 20:28:33
+/* Smarty version 4.1.0, created on 2023-07-07 23:59:54
   from 'app:frontendobjectsmonographs' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.1.0',
-  'unifunc' => 'content_64a707d120b973_41934931',
+  'unifunc' => 'content_64a88adaf053c1_03403417',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '7d044347141a9ff62cda15748a77b1afeb0d7a34' => 
     array (
       0 => 'app:frontendobjectsmonographs',
-      1 => 1688668107,
+      1 => 1688767193,
       2 => 'app',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_64a707d120b973_41934931 (Smarty_Internal_Template $_smarty_tpl) {
+function content_64a88adaf053c1_03403417 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_checkPlugins(array(0=>array('file'=>'/opt/lampp/htdocs/filosofia/omp/lib/pkp/lib/vendor/smarty/smarty/libs/plugins/modifier.date_format.php','function'=>'smarty_modifier_date_format',),));
 ?>
  

@@ -91,6 +91,7 @@
 	{* Featured *}
 	{if !empty($featuredMonographs)}
 		{include file="frontend/components/monographList.tpl" monographs=$featuredMonographs titleKey="catalog.featured"}
+	</div>
 	{/if}
 
 	{* New releases *}
@@ -119,8 +120,8 @@
 							</a>
 						</h4>
 						<div class="date">
-							{$announcement->getDatePosted()|date_format:$dateFormatShort}
-						</div>
+							{$announcement->getDatePosted()|date_format:$dateFormatShort} 
+						</div> 
 					</article>
 				{/if}
 			{/foreach}
@@ -136,6 +137,7 @@
 	{/if}
 
 </div>
-<div id="autores"></div>
+
+
 {include file="frontend/components/footer.tpl"}
 <script src="{$baseUrl}/public/JS/script.js"></script>

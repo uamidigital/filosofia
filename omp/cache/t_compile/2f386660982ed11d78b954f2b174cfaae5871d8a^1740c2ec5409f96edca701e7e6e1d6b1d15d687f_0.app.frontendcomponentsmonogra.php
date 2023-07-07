@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.1.0, created on 2023-07-06 22:30:15
+/* Smarty version 4.1.0, created on 2023-07-07 23:54:03
   from 'app:frontendcomponentsmonogra' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.1.0',
-  'unifunc' => 'content_64a7245744af72_92861556',
+  'unifunc' => 'content_64a8897bbe0012_71042042',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '1740c2ec5409f96edca701e7e6e1d6b1d15d687f' => 
     array (
       0 => 'app:frontendcomponentsmonogra',
-      1 => 1688675384,
+      1 => 1688766834,
       2 => 'app',
     ),
   ),
@@ -21,23 +21,24 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'app:frontend/objects/monograph_summary.tpl' => 1,
   ),
 ),false)) {
-function content_64a7245744af72_92861556 (Smarty_Internal_Template $_smarty_tpl) {
-if (!$_smarty_tpl->tpl_vars['heading']->value) {?>
-	<?php $_smarty_tpl->_assignInScope('heading', "h2");
+function content_64a8897bbe0012_71042042 (Smarty_Internal_Template $_smarty_tpl) {
+?> <?php if (!$_smarty_tpl->tpl_vars['heading']->value) {?>
+    <?php $_smarty_tpl->_assignInScope('heading', "h2");
 }
 if (!$_smarty_tpl->tpl_vars['titleKey']->value) {?>
-	<?php $_smarty_tpl->_assignInScope('monographHeading', $_smarty_tpl->tpl_vars['heading']->value);
+    <?php $_smarty_tpl->_assignInScope('monographHeading', $_smarty_tpl->tpl_vars['heading']->value);
 } elseif ($_smarty_tpl->tpl_vars['heading']->value == 'h2') {?>
-	<?php $_smarty_tpl->_assignInScope('monographHeading', "h3");
+    <?php $_smarty_tpl->_assignInScope('monographHeading', "h3");
 } elseif ($_smarty_tpl->tpl_vars['heading']->value == 'h3') {?>
-	<?php $_smarty_tpl->_assignInScope('monographHeading', "h4");
+    <?php $_smarty_tpl->_assignInScope('monographHeading', "h4");
 } else { ?>
-	<?php $_smarty_tpl->_assignInScope('monographHeading', "h5");
+    <?php $_smarty_tpl->_assignInScope('monographHeading', "h5");
 }?>
 
 <div class="cmp_monographs_list">
     <?php $_smarty_tpl->_assignInScope('currentTitleKey', '');?>
     <?php $_smarty_tpl->_assignInScope('groupCounter', 0);?>
+    <?php $_smarty_tpl->_assignInScope('rowCounter', 0);?>
 
     <?php
 $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['monographs']->value, 'monograph', false, NULL, 'monographListLoop', array (
@@ -62,10 +63,11 @@ $_smarty_tpl->tpl_vars['monograph']->do_else = false;
                 </<?php echo $_smarty_tpl->tpl_vars['heading']->value;?>
 >
             <?php }?>
-            <?php $_smarty_tpl->_assignInScope('groupCounter', 1);?>
-            <div class="contenido">
-        <?php } else { ?>
-            <?php $_smarty_tpl->_assignInScope('groupCounter', $_smarty_tpl->tpl_vars['groupCounter']->value+1);?>
+            <?php $_smarty_tpl->_assignInScope('rowCounter', 0);?>
+        <?php }?>
+
+        <?php if ($_smarty_tpl->tpl_vars['rowCounter']->value%3 == 0) {?>
+            <div class="row contenido">
         <?php }?>
 
         <div class="columna">
@@ -73,21 +75,17 @@ $_smarty_tpl->tpl_vars['monograph']->do_else = false;
 ?>
         </div>
 
-        <?php if ($_smarty_tpl->tpl_vars['groupCounter']->value%3 == 0) {?>
+        <?php $_smarty_tpl->_assignInScope('rowCounter', $_smarty_tpl->tpl_vars['rowCounter']->value+1);?>
+
+        <?php if ($_smarty_tpl->tpl_vars['rowCounter']->value%3 == 0 || $_smarty_tpl->tpl_vars['loop']->value['last']) {?>
             </div>
-            <?php if ($_smarty_tpl->tpl_vars['titleKey']->value != $_smarty_tpl->tpl_vars['currentTitleKey']->value || $_smarty_tpl->tpl_vars['groupCounter']->value < $_smarty_tpl->tpl_vars['counter']->value) {?>
-                <div class="contenido">
-            <?php }?>
         <?php }?>
     <?php
 }
 $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
 
-    <?php if ($_smarty_tpl->tpl_vars['groupCounter']->value%3 != 0) {?>
-        </div>
-    <?php }?>
-
 </div>
+
 
 
 <?php }

@@ -33,7 +33,10 @@
 
 	{* Monograph List *}
 	{else}
-		{include file="frontend/components/monographList.tpl" monographs=$publishedSubmissions featured=$featuredMonographIds}
+		
+		
+			{include file="frontend/components/monographList.tpl" monographs=$publishedSubmissions featured=$featuredMonographIds}
+		
 
 		{* Pagination *}
 		{if $prevPage > 1}

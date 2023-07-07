@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.1.0, created on 2023-05-25 21:03:19
+/* Smarty version 4.1.0, created on 2023-07-07 23:24:09
   from 'app:frontendpagescatalog.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.1.0',
-  'unifunc' => 'content_646fb0f7379298_42162402',
+  'unifunc' => 'content_64a8827937b617_06231734',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '613b51f6993a9be71ca86f414c66d6a168f31c13' => 
     array (
       0 => 'app:frontendpagescatalog.tpl',
-      1 => 1684945243,
+      1 => 1688765047,
       2 => 'app',
     ),
   ),
@@ -25,7 +25,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'app:frontend/components/footer.tpl' => 1,
   ),
 ),false)) {
-function content_646fb0f7379298_42162402 (Smarty_Internal_Template $_smarty_tpl) {
+function content_64a8827937b617_06231734 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_subTemplateRender("app:frontend/components/header.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array('pageTitle'=>"navigation.catalog"), 0, false);
 ?>
 
@@ -49,8 +49,11 @@ $_smarty_tpl->_subTemplateRender("app:frontend/components/header.tpl", $_smarty_
 </p>
 
 		<?php } else { ?>
-		<?php $_smarty_tpl->_subTemplateRender("app:frontend/components/monographList.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array('monographs'=>$_smarty_tpl->tpl_vars['publishedSubmissions']->value,'featured'=>$_smarty_tpl->tpl_vars['featuredMonographIds']->value), 0, false);
+		
+		
+			<?php $_smarty_tpl->_subTemplateRender("app:frontend/components/monographList.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array('monographs'=>$_smarty_tpl->tpl_vars['publishedSubmissions']->value,'featured'=>$_smarty_tpl->tpl_vars['featuredMonographIds']->value), 0, false);
 ?>
+		
 
 				<?php if ($_smarty_tpl->tpl_vars['prevPage']->value > 1) {?>
 			<?php $_smarty_tpl->smarty->ext->_capture->open($_smarty_tpl, 'default', 'prevUrl', null);

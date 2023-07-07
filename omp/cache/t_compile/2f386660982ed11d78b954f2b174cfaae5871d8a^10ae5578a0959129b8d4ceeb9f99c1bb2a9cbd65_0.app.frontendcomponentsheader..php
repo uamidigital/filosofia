@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.1.0, created on 2023-07-07 01:47:24
+/* Smarty version 4.1.0, created on 2023-07-08 00:50:10
   from 'app:frontendcomponentsheader.' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.1.0',
-  'unifunc' => 'content_64a7528c379e97_39386435',
+  'unifunc' => 'content_64a896a2cc07e4_16754864',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '10ae5578a0959129b8d4ceeb9f99c1bb2a9cbd65' => 
     array (
       0 => 'app:frontendcomponentsheader.',
-      1 => 1688687241,
+      1 => 1688770209,
       2 => 'app',
     ),
   ),
@@ -22,7 +22,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'app:frontend/components/skipLinks.tpl' => 1,
   ),
 ),false)) {
-function content_64a7528c379e97_39386435 (Smarty_Internal_Template $_smarty_tpl) {
+function content_64a896a2cc07e4_16754864 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_checkPlugins(array(0=>array('file'=>'/opt/lampp/htdocs/filosofia/omp/lib/pkp/lib/vendor/smarty/smarty/libs/plugins/modifier.replace.php','function'=>'smarty_modifier_replace',),));
 $_smarty_tpl->_assignInScope('showingLogo', true);
 if (!$_smarty_tpl->tpl_vars['displayPageHeaderLogo']->value) {
@@ -82,13 +82,13 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 50px;
+  padding: 15px;
   font-family: 'Roboto', sans-serif;
 }
 
 .card {
-  width: 200px;
-  height: 300px;
+  width: 250px;
+  height: 350px;
   border-radius: 5px;
   overflow: hidden;
   cursor: pointer;
@@ -118,8 +118,8 @@ main {
 }
 
 .card h2 {
-  position: absolute;
-  inset: auto auto 5px 30px;
+	position: absolute;
+  inset: auto auto 10px 0px;
   margin: 0;
   transition: inset 0.3s 0.3s ease-out;
   font-family: 'Roboto Condensed', sans-serif;
@@ -127,6 +127,11 @@ main {
   text-transform: uppercase;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
   font-weight: bold;
+  background-color: rgba(255, 255, 255, 1);
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  z-index: 1;
 }
 
 .card p,
@@ -149,8 +154,10 @@ main {
 }
 
 .card:hover h2 {
-  inset: auto auto 220px 30px;
+	inset: auto auto 220px 0px;
   transition: inset 0.3s ease-out;
+  background-color: transparent;
+  z-index: auto;
 }
 
 .card:hover p,

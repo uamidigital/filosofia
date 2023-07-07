@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.1.0, created on 2023-07-06 18:47:27
+/* Smarty version 4.1.0, created on 2023-07-07 23:49:28
   from 'app:frontendpagesindex.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.1.0',
-  'unifunc' => 'content_64a6f01f46a780_41246234',
+  'unifunc' => 'content_64a888680d7b70_19038003',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '39b1599f8f1b1d44415ae2df41968bb30a1154ef' => 
     array (
       0 => 'app:frontendpagesindex.tpl',
-      1 => 1688662046,
+      1 => 1688766563,
       2 => 'app',
     ),
   ),
@@ -25,7 +25,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'app:frontend/components/footer.tpl' => 1,
   ),
 ),false)) {
-function content_64a6f01f46a780_41246234 (Smarty_Internal_Template $_smarty_tpl) {
+function content_64a888680d7b70_19038003 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_checkPlugins(array(0=>array('file'=>'/opt/lampp/htdocs/filosofia/omp/lib/pkp/lib/vendor/smarty/smarty/libs/plugins/modifier.date_format.php','function'=>'smarty_modifier_date_format',),));
 $_smarty_tpl->_subTemplateRender("app:frontend/components/header.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>
@@ -111,6 +111,7 @@ $_smarty_tpl->_subTemplateRender("app:frontend/components/header.tpl", $_smarty_
 		<?php if (!empty($_smarty_tpl->tpl_vars['featuredMonographs']->value)) {?>
 		<?php $_smarty_tpl->_subTemplateRender("app:frontend/components/monographList.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array('monographs'=>$_smarty_tpl->tpl_vars['featuredMonographs']->value,'titleKey'=>"catalog.featured"), 0, false);
 ?>
+	</div>
 	<?php }?>
 
 		<?php if (!empty($_smarty_tpl->tpl_vars['newReleases']->value)) {?>
@@ -151,8 +152,8 @@ $_smarty_tpl->tpl_vars['__smarty_foreach_announcements']->value['iteration']++;
 						</h4>
 						<div class="date">
 							<?php echo smarty_modifier_date_format($_smarty_tpl->tpl_vars['announcement']->value->getDatePosted(),$_smarty_tpl->tpl_vars['dateFormatShort']->value);?>
-
-						</div>
+ 
+						</div> 
 					</article>
 				<?php }?>
 			<?php
@@ -170,7 +171,8 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
 	<?php }?>
 
 </div>
-<div id="autores"></div>
+
+
 <?php $_smarty_tpl->_subTemplateRender("app:frontend/components/footer.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 echo '<script'; ?>
  src="<?php echo $_smarty_tpl->tpl_vars['baseUrl']->value;?>
